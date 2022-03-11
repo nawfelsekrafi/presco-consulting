@@ -1,0 +1,36 @@
+/* #waves{
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    background-image: url('../../../assets/Waves.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.footer__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#1B89CA,#2E3792);
+    color: #fff;
+    padding: 90px 140px 26px 140px;
+    border-radius: 112px 112px 0px 0px;
+}
+.footer__container > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__container > div:nth-child(1)>div:nth-child(1) {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__container > div:nth-child(2) {
+    text-align: center;
+}
+#footer-logo {
+    width: 318px;
+}
+
+a {
+    color: #fff;
+}
