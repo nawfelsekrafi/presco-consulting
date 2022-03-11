@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --black-text: #333333;
+    --primary-purple:  #b6277b;
+    --primary-blue: #245fab;
+}
+body {
+    color: var(--black-text);
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
