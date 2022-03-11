@@ -14,7 +14,7 @@ h1,
 }
 
 .hero__section-description > h1 {
-  font-size: 45px;
+  font-size: 33px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
@@ -29,7 +29,7 @@ h1,
 }
 .hero__section-description > p {
   color: var(--black-text);
-  font-size: 20px;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
@@ -41,7 +41,7 @@ h1,
   border-radius: 25px;
   padding: 10px 20px;
   color: var(--primary-purple);
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background-color: transparent;
@@ -77,7 +77,7 @@ h1,
 }
 
 .training__section > h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin: 0px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -85,8 +85,8 @@ h1,
 
 .training__section > div > input {
   border: none;
-  height: 46px;
-  font-size: 23px;
+  height: 40px;
+  font-size: 16px;
   border-radius: 31px;
   padding: 7px 30px;
   margin-top: 14px;
@@ -96,8 +96,8 @@ h1,
 
 .training__section > div > button {
   margin-left: 10px;
-  height: 63px;
-  font-size: 23px;
+  height: 57px;
+  font-size: 16px;
   border: none;
   background: linear-gradient(#1b89ca, #2e3792);
   border-radius: 32px;
@@ -121,7 +121,7 @@ input:focus {
   color: var(--primary-purple);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .projects > h2,
@@ -227,7 +227,7 @@ input:focus {
 .contact-description > h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .contact-description > h2:nth-child(2n + 1) {
@@ -236,6 +236,9 @@ input:focus {
 
 .contact-description > h2:nth-child(2n) {
   color: var(--primary-purple);
+}
+.contact-illustration > img {
+    width:85%;
 }
 
 .trainings-container {
@@ -249,14 +252,14 @@ input:focus {
     border: 1px solid var(--primary-blue);
     border-radius: 65px;
     margin-bottom: 21px;
-    padding: 56px 51px;
+    padding: 5px 51px;
     text-align: start;
 }
 .training>h2{
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--primary-blue)
 }
 
@@ -291,8 +294,8 @@ input:focus {
 }
 .training  > a {
     display: flex;
-    font-size: 13px;
-    margin-left: 34%;
+    font-size: 10px;
+    margin-left: 15%;
     justify-content: space-between;
     font-family: "Montserrat", sans-serif;
     visibility: hidden;
@@ -317,4 +320,40 @@ input:focus {
 .training:hover > a{
     visibility: visible;
     color:#fff;
+}
+
+.partners__section{
+    background: linear-gradient(#1b89ca, #2e3792);
+    border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    padding: 40px 30px;
+    margin: 75px auto;
+    width: 70%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.partners-gallery , .partners-gallery> div {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.p-logo-container{
+    background: #fff;
+    width: 245px;
+    height: 245px;
+    border-radius: 54%;
+    margin-left: 22px;
+}
+.p-logo-container > img{
+    padding: 89px 0px;
+    width: 74%;
+}
+
+.arrows{
+    cursor: pointer;
+}
+
+.hero__section-illustration > img {
+    width: 110%;
 }
