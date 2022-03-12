@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="188" height="188" viewBox="0 0 188 188">
+  <defs>
+    <filter id="Ellipse_18" x="0" y="0" width="188" height="188" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_17" data-name="Ellipse 17" cx="85" cy="85" r="85" transform="translate(461 4394)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1b89ca"/>
+      <stop offset="1" stop-color="#2e3792"/>
+    </linearGradient>
+  </defs>
+  <g id="Client_Head" data-name="Client Head" transform="translate(-452 -4389)">
+    <g transform="matrix(1, 0, 0, 1, 452, 4389)" filter="url(#Ellipse_18)">
+      <circle id="Ellipse_18-2" data-name="Ellipse 18" cx="85" cy="85" r="85" transform="translate(9 5)" fill="#fff"/>
+    </g>
+    <g id="Mask_Group_8" data-name="Mask Group 8" clip-path="url(#clip-path)">
+      <g id="Head_Front_Short_2" data-name="Head/Front/Short 2" transform="translate(499.708 4421.05)">
+        <g id="Head" transform="translate(7.069 12.888)">
+          <path id="Head-2" data-name="Head" d="M0,140,15.737,66.145C6.961,55.772,1.02,43.059,2.013,28.816c2.861-41.042,59.6-32.013,70.641-11.3s9.727,73.258-4.538,76.961c-5.689,1.477-17.808-2.14-30.143-9.626L45.715,140Z" transform="translate(-0.069 0.062)" fill="#b28b67"/>
+        </g>
+        <path id="Hair" d="M19.853,88.544C14.113,62.907-2.24,45.431.257,33.972S13.571,19.721,13.571,19.721,19.164-3,49.652.4s49.1,16.1,41.06,44.072c-7.387,0-16.3-2.682-28.636,1.913-5.869,2.187-8.4,13.564-8.4,13.564H48.109s-8.112-13.5-16-9.923-3.585,17.385-3.585,17.385L25.781,88.544Z" transform="translate(0 -0.05)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

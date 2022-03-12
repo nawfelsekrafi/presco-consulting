@@ -15,7 +15,7 @@ h1,
 
 .hero__section-description > h1 {
   font-size: 35px;
-    margin: 0;
+  margin: 0;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
@@ -240,122 +240,242 @@ input:focus {
   color: var(--primary-purple);
 }
 .contact-illustration > img {
-    width:85%;
+  width: 85%;
 }
 
 .trainings-container {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    width: 83%;
-    justify-content: space-between;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  width: 83%;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 .training {
-    border: 1px solid var(--primary-blue);
-    border-radius: 65px;
-    margin-bottom: 21px;
-    padding: 5px 51px;
-    text-align: start;
+  border: 1px solid var(--primary-blue);
+  border-radius: 65px;
+  margin-bottom: 21px;
+  padding: 5px 51px;
+  text-align: start;
 }
-.training>h2{
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-    color: var(--primary-blue)
+.training > h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--primary-blue);
 }
 
 .trainings-projects > button {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .training:nth-child(2n) {
-    border: 1px solid var(--primary-purple)
+  border: 1px solid var(--primary-purple);
 }
-.training> div> svg >path {
-    fill:var(--primary-blue)
+.training > div > svg > path {
+  fill: var(--primary-blue);
 }
-.training:nth-child(2n)> div> svg >path {
-    fill:var(--primary-purple)
-}
-
-.training:nth-child(2n)> h2 , .training:nth-child(2n)> div{
-    color: var(--primary-purple)
+.training:nth-child(2n) > div > svg > path {
+  fill: var(--primary-purple);
 }
 
-.training> div {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 21px;
+.training:nth-child(2n) > h2,
+.training:nth-child(2n) > div {
+  color: var(--primary-purple);
+}
+
+.training > div {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 21px;
 }
 
 .training > div > span {
-    margin-left: 10px;
+  margin-left: 10px;
 }
-.training  > a {
-    display: flex;
-    font-size: 10px;
-    margin-left: 15%;
-    justify-content: space-between;
-    font-family: "Montserrat", sans-serif;
-    visibility: hidden;
-}
-
-.training:nth-child(2n +1)> div{
-    color: var(--primary-blue)
+.training > a {
+  display: flex;
+  font-size: 10px;
+  margin-left: 15%;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  visibility: hidden;
 }
 
-.training:nth-child(2n +1):hover  {
-    background: linear-gradient(#1b89ca, #2e3792);
-}
-.training:nth-child(2n ):hover  {
-    background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
-}
-.training:hover > div>svg>path  {
-    fill:#fff;
-}
-.training:hover > h2, .training:hover > div{
-    color: #fff;
-}
-.training:hover > a{
-    visibility: visible;
-    color:#fff;
+.training:nth-child(2n + 1) > div {
+  color: var(--primary-blue);
 }
 
-.partners__section{
-    background: linear-gradient(#1b89ca, #2e3792);
-    border-radius: 100px;
-    text-align: center;
-    color: #fff;
-    padding: 40px 30px;
-    margin: 75px auto;
-    width: 70%;
-    font-family: "Montserrat", sans-serif;
+.training:nth-child(2n + 1):hover {
+  background: linear-gradient(#1b89ca, #2e3792);
+}
+.training:nth-child(2n):hover {
+  background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
+}
+.training:hover > div > svg > path {
+  fill: #fff;
+}
+.training:hover > h2,
+.training:hover > div {
+  color: #fff;
+}
+.training:hover > a {
+  visibility: visible;
+  color: #fff;
 }
 
-.partners-gallery , .partners-gallery> div {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-.p-logo-container{
-    background: #fff;
-    width: 245px;
-    height: 245px;
-    border-radius: 54%;
-    margin-left: 22px;
-}
-.p-logo-container > img{
-    padding: 89px 0px;
-    width: 74%;
+.partners__section {
+  background: linear-gradient(#1b89ca, #2e3792);
+  border-radius: 100px;
+  text-align: center;
+  color: #fff;
+  padding: 40px 30px;
+  margin: 75px auto;
+  width: 70%;
+  font-family: "Montserrat", sans-serif;
 }
 
-.arrows{
-    cursor: pointer;
+.partners-gallery,
+.partners-gallery > div {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.p-logo-container {
+  background: #fff;
+  width: 245px;
+  height: 245px;
+  border-radius: 54%;
+  margin-left: 22px;
+}
+.p-logo-container > img {
+  padding: 89px 0px;
+  width: 74%;
+}
+
+.arrows {
+  cursor: pointer;
 }
 
 .hero__section-illustration > img {
-    width: 110%;
+  width: 110%;
+}
+
+.testimonails__section {
+  margin: 0px 140px;
+  background: linear-gradient(#d1d1d1, #ffffff);
+  text-align: center;
+  border-radius: 80px;
+  padding: 30px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.partners__section > h2,
+.testimonails__section > h2 {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.testimonails {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.testimonail {
+  width: 27%;
+}
+
+.testimonail:nth-child(2n + 1) > div:nth-child(2n + 1) {
+  border: 1px solid var(--primary-blue);
+  color:  var(--primary-blue);
+  display: block;
+  height: 263px;
+  padding: 60px 20px 82px 20px;
+  border-radius: 70px 70px 0px 0px;
+}
+.testimonail:nth-child(2n + 1) > div:nth-child(2n + 1) > svg > path {
+  fill: var(--primary-blue);
+}
+
+.testimonail:nth-child(2n) > div:nth-child(2n + 1) {
+  border: 1px solid var(--primary-purple);
+  color:  var(--primary-purple);
+  display: block;
+  height: 263px;
+  padding: 60px 20px 82px 20px;
+  border-radius: 70px 70px 0px 0px;
+}
+.testimonail:nth-child(2n):hover > div:nth-child(2n + 1) {
+  background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
+  color: #fff;
+}
+.testimonail:nth-child(2n +1):hover > div:nth-child(2n + 1) {
+  background: linear-gradient(#1b89ca, #2e3792);
+  color: #fff;
+}
+
+.testimonail:nth-child(2n) > div:nth-child(2n + 1) > svg > path {
+  fill: var(--primary-purple);
+}
+.testimonail:hover > div:nth-child(2n + 1) > svg > path {
+  fill: #fff;
+}
+
+.testimonail > div:nth-child(2n){
+  margin-top: -87px;
+}
+
+.testimonail:nth-child(2n) > div:nth-child(2n) > h3{
+  color: var(--primary-purple);
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.testimonail:nth-child(2n +1) > div:nth-child(2n) > h3{
+  color: var(--primary-blue);
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.testimonail:nth-child(2n) > div:nth-child(2n) > p{
+  color: var(--primary-purple);
+  font-size: 15px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.testimonail:nth-child(2n +1) > div:nth-child(2n) > p{
+  color: var(--primary-blue);
+  font-size: 15px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.cercles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 33px;
+}
+
+.cercle {
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin-right: 9px;
+}
+
+.cercle:nth-child(2n){
+  border: 1px solid var(--primary-purple);
+}
+.cercle:nth-child(2n + 1){
+  border: 1px solid var(--primary-blue);
 }
