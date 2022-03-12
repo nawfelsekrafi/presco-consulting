@@ -85,6 +85,13 @@ p {
     font-size: 13px;
     text-align: center;
 }
+.copy-right > hr {
+    border: none;
+    height: 1px;
+    width: 44%;
+    margin-bottom: 14px;
+    background: #fff;
+}
 
 .contact-icon {
     margin-right: 13px;
