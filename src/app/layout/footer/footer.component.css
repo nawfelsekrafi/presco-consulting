@@ -1,20 +1,13 @@
-/* #waves{
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    background-image: url('../../../assets/Waves.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 .footer__container {
     position: relative;
     display: flex;
     flex-direction: column;
     background: linear-gradient(#1B89CA,#2E3792);
     color: #fff;
-    padding: 90px 140px 26px 140px;
-    border-radius: 112px 112px 0px 0px;
+    padding: 32px 36px 0px 36px;
+    border-radius: 70px 70px 0px 0px;
     font-family: "Montserrat", sans-serif;
+    position: relative;
 }
 .footer__container > div:nth-child(1) {
     display: flex;
@@ -49,7 +42,7 @@ input {
     border-radius: 25px;
     height: 45px;
     font-size: 11px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 1px 0px 1px 12px;
     margin-right: 11px;
 }
@@ -69,7 +62,7 @@ input:focus {
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;  
-  margin-bottom: 45px;
+  margin-bottom: 5px;
 }
 
 p {
@@ -84,6 +77,12 @@ p {
 .copy-right{
     font-size: 13px;
     text-align: center;
+    background-image: url('../../../assets/Waves.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px  -36px;
+    padding: 0px;
+    height: 80px;
 }
 .copy-right > hr {
     border: none;
@@ -102,4 +101,9 @@ p {
 }
 h2 {
     font-size: 22px;
+    margin-bottom: 0px;
+}
+
+#map {
+    width: 45%;
 }

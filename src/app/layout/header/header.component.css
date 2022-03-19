@@ -7,15 +7,11 @@
     margin: 0px 140px;
     backdrop-filter: blur(12px);
     background-color: rgba(255, 255, 255, 0.85);
+    margin-top: 10px;
 }
 
 a{
     color: var(--black-text);
-}
-
-a:hover {
-    color: var(--primary-blue);
-    border-bottom: 1px solid var(--primary-blue);
 }
 
 .header__container > div {
@@ -23,19 +19,30 @@ a:hover {
 }
 
 .header__container > div > a {
-    padding: 19px 0px;
+    padding: 8px 0px;
     margin: 20px;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
+    border: 0px solid var(--primary-blue);
+   
 }
 
 #header-contact-btn{
     background: linear-gradient(#1B89CA,#2E3792);
     border-radius: 32px;
-    padding: 22px 31px;
+    padding: 13px 31px;
     color: #fff;
+}
+#header-contact-btn:hover{
+    border:none
 }
 
 #header-icon {
     width: 219px;
 }
+
+.header__container > div > a:hover {
+    color: var(--primary-blue);
+    border-bottom: 1px solid var(--primary-blue);
+}
+

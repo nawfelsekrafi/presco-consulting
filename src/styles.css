@@ -5,12 +5,26 @@
     --primary-purple:  #b6277b;
     --primary-blue: #245fab;
 }
+
 body {
     color: var(--black-text);
     padding: 0px;
     margin: 0px;
     position: relative;
+    overflow-x: hidden;
 }
+
 a {
     text-decoration: none;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: #e9ddeb;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1B89CA, #2E3792);
+    border-radius: 10px;
+  }

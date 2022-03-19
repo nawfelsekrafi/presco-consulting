@@ -1,0 +1,29 @@
+.faq__container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+}
+
+.faq__main > h2 {
+    font-size: 35px;
+    margin: 0;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-blue);
+    text-align: center;
+  }
+
+.faq__main{
+    width: 40%;
+    height:550px;
+    padding:10px 0px;
+}
+.questions{
+    overflow-y: scroll;
+    padding:10px 30px;
+    height: 95%;
+}
+
+.faq__illustration > img {
+    width: 79%;
+}
