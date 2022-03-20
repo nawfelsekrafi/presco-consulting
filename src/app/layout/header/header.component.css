@@ -1,51 +1,64 @@
 .header__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 90vw;
-    padding: 0px 140px;
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-    background-color: rgba(255, 255, 255, 0.85);
-    margin-top: -87px;
-    z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 90vw;
+  padding: 0px 140px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.85);
+  margin-top: -87px;
+  z-index: 100;
 }
 
-a{
-    color: var(--black-text);
+a {
+  color: var(--black-text);
 }
 
 .header__container > div {
-    display: flex;
+  display: flex;
 }
 
 .header__container > div > a {
-    padding: 8px 0px;
-    margin: 20px;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    border: 0px solid var(--primary-blue);
-   
+  padding: 11px 0px;
+  margin: 20px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+.header__container > div > a::after {
+  display: block;
+  content: "";
+  padding-top: 10px;
+  border-bottom: 2px solid var(--primary-blue);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
-#header-contact-btn{
-    background: linear-gradient(#1B89CA,#2E3792);
-    border-radius: 32px;
-    padding: 13px 31px;
-    color: #fff;
+#header-contact-btn {
+  background: linear-gradient(#1b89ca, #2e3792);
+  border-radius: 32px;
+  height: 16px;
+  padding: 11px 31px;
+  color: #fff;
 }
-#header-contact-btn:hover{
-    border:none
+#header-contact-btn::after {
+  display: block;
+  content: "";
+  transform: scaleX(0);
+  padding-top: 0px;
+}
+
+#header-contact-btn:hover {
+  border: none;
 }
 
 #header-icon {
-    width: 219px;
+  width: 219px;
 }
 
-.header__container > div > a:hover {
-    color: var(--primary-blue);
-    border-bottom: 1px solid var(--primary-blue);
+.header__container > div > a:hover:after {
+  transform: scaleX(1);
 }
-
