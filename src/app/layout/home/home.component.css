@@ -30,6 +30,11 @@ h1,
   display: flex;
 }
 
+
+.hero__section-description{
+animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
+}
+
 .hero__section-description > h1 {
   font-size: 35px;
   margin: 0;
@@ -67,6 +72,7 @@ h1,
   background-repeat: no-repeat;
   cursor: pointer;
   transition: all 0.3s ease;
+  animation: go-up 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 .trainings > button,
 .contact-description > button {
@@ -225,16 +231,16 @@ input:focus {
 
 .project:nth-child(2n + 1):hover {
   background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
-  box-shadow: 1px 1px 125px -33px rgba(182, 39, 123, 0.4);
-  -webkit-box-shadow: 1px 1px 125px -33px rgba(182, 39, 123, 0.4);
-  -moz-box-shadow: 1px 1px 125px -33px rgba(182, 39, 123, 0.4);
+  box-shadow: 1px 1px 125px -4px rgba(182, 39, 123, 0.4);
+  -webkit-box-shadow: 1px 1px 125px -4px rgba(182, 39, 123, 0.4);
+  -moz-box-shadow: 1px 1px 125px -4px rgba(182, 39, 123, 0.4);
 }
 
 .project:nth-child(2n):hover {
   background: linear-gradient(#1b89ca, #2e3792);
-  box-shadow: 1px 1px 15px -33px rgba(36, 95, 171, 0.4);
-  -webkit-box-shadow: 1px 1px 125px -33px rgba(36, 95, 171, 0.4);
-  -moz-box-shadow: 1px 1px 125px -33px rgba(36, 95, 171, 0.4);
+  box-shadow: 1px 1px 15px -4px rgba(36, 95, 171, 0.4);
+  -webkit-box-shadow: 1px 1px 125px -4px rgba(36, 95, 171, 0.4);
+  -moz-box-shadow: 1px 1px 125px -4px rgba(36, 95, 171, 0.4);
 }
 
 .project > a {
@@ -408,15 +414,15 @@ input:focus {
 }
 .training:nth-child(2n + 1):hover {
   background: linear-gradient(#1b89ca, #2e3792);
-  box-shadow: 1px 1px 15px -33px rgba(36, 95, 171, 0.4);
-  -webkit-box-shadow: 1px 1px 125px -33px rgba(36, 95, 171, 0.4);
-  -moz-box-shadow: 1px 1px 125px -33px rgba(36, 95, 171, 0.4);
+  box-shadow: 1px 1px 15px -4px rgba(36, 95, 171, 0.4);
+  -webkit-box-shadow: 1px 1px 125px -4px rgba(36, 95, 171, 0.4);
+  -moz-box-shadow: 1px 1px 125px -4px rgba(36, 95, 171, 0.4);
 }
 .training:nth-child(2n):hover {
   background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
-  box-shadow: 1px 1px 125px -33px rgba(182, 39, 123, 0.4);
-  -webkit-box-shadow: 1px 1px 125px -33px rgba(182, 39, 123, 0.4);
-  -moz-box-shadow: 1px 1px 125px -33px rgba(182, 39, 123, 0.4);
+  box-shadow: 1px 1px 125px -4px rgba(182, 39, 123, 0.4);
+  -webkit-box-shadow: 1px 1px 125px -4px rgba(182, 39, 123, 0.4);
+  -moz-box-shadow: 1px 1px 125px -4px rgba(182, 39, 123, 0.4);
 }
 .training:hover > div > svg > path {
   fill: #fff;
@@ -618,7 +624,6 @@ input:focus {
 }
 
 #hero-img {
-  /* margin-top: 50px; */
   margin-top: -96px;
   width: 100%;
   animation: welcome-rotate 10s 1 5s;
@@ -635,6 +640,16 @@ input:focus {
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes go-up {
+  0% {
+    transform: translateY(50rem);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 
