@@ -2,6 +2,8 @@
     display: flex;
     justify-content: flex-start;
     margin-bottom: 60px;
+    z-index: 0;
+    margin-top: 87px;
 }
 
 .faq__main > h2 {
