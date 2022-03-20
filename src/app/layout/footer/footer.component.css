@@ -101,9 +101,12 @@ p {
 }
 h2 {
     font-size: 22px;
-    margin-bottom: 0px;
 }
 
 #map {
     width: 45%;
+}
+
+#restez-inf{
+    margin-bottom: 0;
 }
