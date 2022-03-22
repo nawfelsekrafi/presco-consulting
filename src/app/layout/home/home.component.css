@@ -14,6 +14,9 @@ h1,
   background-position: -111px -233px;
   background-repeat: no-repeat;
 }
+#hero-img{
+  width: 611px;
+}
 .partners__section {
   background-image: url("../../../assets/Waimakariri 02.svg");
   background-size: cover;
@@ -55,7 +58,7 @@ animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin: 36px 0px;
+  margin: 91px 0px;
 }
 .hero__section-description > button,
 .projects > button,
@@ -96,17 +99,17 @@ animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 
 .training__section {
-  padding: 44px 29px;
+  padding: 18px 29px;
   background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
   color: #fff;
   text-align: center;
   width: 54%;
-  margin: -218px auto 10px auto;
+  margin: -57px auto 10px;
   border-radius: 111px;
 }
 
 .training__section > h2 {
-  font-size: 30px;
+  font-size: 27px;
   margin: 0px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -114,7 +117,7 @@ animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 
 .training__section > div > input {
   border: none;
-  height: 40px;
+  height: 25px;
   font-size: 16px;
   border-radius: 31px;
   padding: 7px 30px;
@@ -125,7 +128,7 @@ animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 
 .training__section > div > button {
   margin-left: 10px;
-  height: 57px;
+  height: 42px;
   font-size: 16px;
   border: none;
   background: linear-gradient(#1b89ca, #2e3792);
@@ -537,6 +540,10 @@ input:focus {
 .testimonail:nth-child(2n + 1):hover > div:nth-child(2n + 1) {
   background: linear-gradient(#1b89ca, #2e3792);
   color: #fff;
+}
+
+.testimonail > div > svg {
+  width: 41px;
 }
 
 .testimonail:nth-child(2n) > div:nth-child(2n + 1) > svg > path {
