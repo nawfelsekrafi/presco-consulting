@@ -1,101 +1,114 @@
 .faq__container {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 60px;
-    z-index: 0;
-    margin-top: 87px;
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    background-image: url("../../../assets/Waimakariri 02.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+  z-index: 0;
+  margin-top: 87px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../../../assets/Waimakariri 02.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .faq__main > h2 {
-    font-size: 35px;
-    margin: 0;
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif;
-    color: var(--primary-blue);
-    text-align: center;
-    margin-bottom: 20px;
-  }
+  font-size: 35px;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-blue);
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-.faq__main{
-    width: 40%;
-    height:550px;
-    padding:10px 0px;
+.faq__main {
+  width: 40%;
+  height: 550px;
+  padding: 10px 0px;
 }
 
 .faq__main > div {
-    overflow-y: scroll;
-    padding-left: 38px;
-    height: 500px;
+  overflow-y: scroll;
+  padding-left: 38px;
+  height: 500px;
 }
-.questions{
-    overflow-y: scroll;
-    padding:10px 30px;
-    height: 95%;
+.questions {
+  overflow-y: scroll;
+  padding: 10px 30px;
+  height: 95%;
 }
 
 .faq__illustration > img {
-    width: 79%;
+  width: 79%;
 }
 
 input {
-    display: none;
-  }
+  display: none;
+}
 
-  label {
-    display: block;
-    cursor: pointer;
-    padding: 10px 0px;
-    font-weight: 400;
-    font-size: 20px;
-    max-width: 459px;
-  }
+label {
+  display: block;
+  cursor: pointer;
+  padding: 10px 0px;
+  font-weight: 400;
+  font-size: 17px;
+  max-width: 459px;
+}
 
-  label:hover {
-      color: var(--primary-purple);
-  }
+label:hover {
+  color: var(--primary-purple);
+}
 
-  input + label + .content {
-    display: none;
-  }
-  
-  input:checked + label + .content {
-    display: block;
-  }
+input + label + .content {
+  display: none;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
 
-  .content {
-    color: hsl(240, 6%, 50%);
-    line-height: 17px;
-    font-size: 12px;
-  }
+input:checked + label + .content {
+  display: block;
+  opacity: 1;
+}
 
-   svg {
-    position: absolute;
-    left: -35px;
-    top: 12px;
-  }
+.content {
+  color: hsl(240, 6%, 50%);
+  line-height: 17px;
+  font-size: 12px;
+}
 
-  .minus {
-    position: absolute;
-    left: -35px;
-    top: 20px;
-  }
+svg {
+  position: absolute;
+  left: 12px;
+  top: 19px;
+  width: 16px;
+  transition: opacity 1s ease-out;
+  opacity: 1;
+}
 
-  .minus{
-      display: none;
-  }
-  input:checked + label > svg {
-    display: none;
-  }
-  input:checked + label > .minus {
-    display: block;
-  }
+.minus {
+  position: absolute;
+  left: 13px;
+  top: 29px;
+  width: 14px;
+  display: none;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+input:checked + label > svg {
+  display: none;
+  opacity: 0;
+}
+input:checked + label > .minus {
+  display: block;
+  opacity: 1;
+}
 
-  .q {
-      position: relative;
-      /*box-shadow: ; */
-  }
+.q {
+  position: relative;
+  margin-bottom: 23px;
+  margin-right: 17px;
+  background-color: var(--white);
+  padding: 10px 10px 10px 39px;
+  box-shadow: 1px 6px 12px 2px rgb(86 73 73 / 20%);
+  border-radius: 15px;
+}
