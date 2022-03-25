@@ -33,7 +33,7 @@
   height: 500px;
 }
 .questions {
-  overflow-y: scroll;
+  overflow:auto;
   padding: 10px 30px;
   height: 95%;
 }
