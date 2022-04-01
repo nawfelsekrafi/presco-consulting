@@ -34,7 +34,11 @@ a {
   padding-top: 10px;
   border-bottom: 2px solid var(--primary-blue);
   transform: scaleX(0);
+  color: var(--black-text);
   transition: transform 250ms ease-in-out;
+}
+.header__container > div > a:hover {
+ color: var(--primary-blue);
 }
 
 #header-contact-btn {

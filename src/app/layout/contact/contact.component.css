@@ -1,0 +1,130 @@
+.contact__container {
+    justify-content: flex-start;
+    margin-bottom: 60px;
+    z-index: 0;
+    margin-top: 87px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.first-section {
+    background-image: url("../../../assets/NC-first-Backgound.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+.first-section div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.first-section > img {
+    width: 20%;
+}
+.first-section > div > p {
+    font-size: 17;
+}
+.first-section > div > svg {
+    cursor: pointer;
+}
+.first-section > div > svg:hover > path {
+    fill: var(--primary-purple);
+    transform: fill .3s ease;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-blue);
+}
+
+h1 > span {
+    color: var(--primary-purple);
+}
+
+.second-section {
+    background-image: url("../../../assets/NC-second-Backgound.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+
+.second-section > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form > div  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* hr {
+    border: 0;
+    height: 3px;
+    background: var(--primary-blue);
+} */
+
+.third-section {
+    background-image: url("../../../assets/NC-last-Backgound.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.third-section > div { 
+    display: flex;
+    background-color: var(--primary-blue);
+    justify-content: center;
+    align-items: center;
+    width: 811px;
+    margin: 0 auto;
+}
+
+.third-section > div > h1 {
+    color: white;
+    padding: 42px;
+}
+.third-section > div > div > p {
+    color: white;
+    font-size: 15px;
+}
+.third-section > div > div{ 
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-purple);
+    padding: 33px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
