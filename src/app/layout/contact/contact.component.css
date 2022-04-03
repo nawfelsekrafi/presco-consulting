@@ -4,6 +4,7 @@
   z-index: 0;
   margin-top: 87px;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .first-section {
