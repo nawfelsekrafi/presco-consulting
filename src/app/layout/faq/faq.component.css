@@ -28,7 +28,7 @@
 }
 
 .faq__main > div {
-  overflow:auto;
+  overflow: auto;
   padding-left: 38px;
   height: 500px;
 }
@@ -110,4 +110,40 @@ input:checked + label > .minus {
   padding: 10px 10px 10px 39px;
   box-shadow: 1px 6px 12px 2px rgb(86 73 73 / 20%);
   border-radius: 15px;
+}
+
+.faq__illustration {
+  margin-top: 14px;
+}
+
+@media only screen and (max-width: 1380px) {
+  .faq__main {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .faq__illustration > img {
+    width: 95%;
+  }
+  .faq__main > div {
+    overflow: auto;
+    padding-left: 11px;
+  }
+  .faq__main {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 892px) {
+  .faq__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq__main {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 762px) {
+  .faq__main {
+    width: 100%;
+  }
 }
