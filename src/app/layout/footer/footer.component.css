@@ -128,12 +128,6 @@ h2 {
 }
 }
 @media only screen and (max-width: 612px) {
-    /* #footer-logo {
-        width: 26%;
-    }
-    .footer__container> div:nth-child(1) > div {
-        width: initial !important;
-    } */
     .footer__container > div:nth-child(1) {
         grid-template-columns: 100%;
 }
