@@ -110,3 +110,31 @@ h2 {
   display: flex;
   align-items: flex-start;
 }
+
+
+@media only screen and (max-width: 1180px) {
+    #footer-logo {
+        width: 26%;
+    }
+    .footer__container> div:nth-child(1) > div {
+        width: initial !important;
+    }
+    .footer__container > div:nth-child(1) {
+        display: grid;
+        grid-template-columns: 50% 39%;
+        justify-content: center;
+        align-items: start;    
+        justify-items: start;
+}
+}
+@media only screen and (max-width: 612px) {
+    /* #footer-logo {
+        width: 26%;
+    }
+    .footer__container> div:nth-child(1) > div {
+        width: initial !important;
+    } */
+    .footer__container > div:nth-child(1) {
+        grid-template-columns: 100%;
+}
+}
