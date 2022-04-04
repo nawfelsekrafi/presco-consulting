@@ -7,3 +7,86 @@ input[type="file"] {
     padding: 6px 12px;
     cursor: pointer;
 }
+
+.rejoindre__container {
+    margin-bottom: 60px;
+    z-index: 0;
+    margin-top: 87px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.first-section {
+    background-image: url("../../../assets/Backgound.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75vh;
+    margin-bottom: 100px;
+  }
+
+  .first-section div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .first-section > img {
+    margin-top: 70px;
+    width: 40%;
+  }
+  .first-section > div > p {
+    font-size: 17;
+  }
+  .first-section > div > svg {
+    cursor: pointer;
+  }
+  .first-section > div > svg:hover > path {
+    fill: var(--primary-purple);
+    transform: fill 0.3s ease;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+  }
+  
+  h1 > span {
+    color: var(--primary-purple);
+  }
+
+  .second-section {
+    background: linear-gradient(#1B89CA, #2E3792);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-section > div{
+      display: flex;
+  }
+  .second-section > div:nth-child(2){
+      display: flex;
+      flex-direction: row-reverse;
+        text-align: end;
+  }
+
+  p{
+      text-align: start;
+  }
+  .second-section > div > img {
+      background-color: #fff;
+      width: 462px;
+      border-radius: 70px;
+  }
+
+  .second-section > div > div {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+  }

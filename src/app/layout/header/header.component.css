@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  width: 90vw;
+  width: 82vw;
   padding: 0px 140px;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -68,7 +68,7 @@ a {
 }
 
 #header-icon {
-  width: 219px;
+  width: 15%;
 }
 
 .header__container > div > a:hover:after {
@@ -81,4 +81,16 @@ a {
 .menu-active-btn {
   background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
   color: white;
+}
+
+@media only screen and (max-width: 1294px) {
+  .header__container > div > a  {
+  margin: 20px 6px;
+}
+}
+@media only screen and (max-width: 1082px) {
+  .header__container > div {
+      display: flex;
+      visibility: hidden;
+  }
 }
