@@ -147,6 +147,11 @@ h1 > span {
   animation: go-up 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 
+.fourth-section > button {
+  margin-top: 30px;
+  width: 350px;
+}
+
 .second-section > button:hover, .fourth-section > button:hover  {
   transform: translateY(-4px);
 }
@@ -202,6 +207,9 @@ hr {
 
 .fourth-section {
   background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .fourth-section > h1 {
   padding-top: 41px;
@@ -217,6 +225,7 @@ hr {
   flex-direction: column;
   border: 1px solid #fff;
   border-radius: 5px;
+  padding: 33px 105px;
 }
 
 .fourth-section > div > div {
@@ -224,7 +233,7 @@ hr {
   justify-content: space-between;
   border-bottom: 1px solid #fff;
   align-content: center;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   align-items: center;
 }
@@ -238,7 +247,7 @@ hr {
 .fourth-section > div > div > button:hover {
   background: linear-gradient(#1B89CA, #2E3792);
   color: #fff;
-  border: none;
+  border: 1px solid var(--primary-blue);
   padding: 5px;
 }
 .fourth-section > div > div > h2 {
