@@ -148,9 +148,10 @@ textarea:focus {
 }
 
 hr {
-  height: 1px;
+  height: 2px;
   width: 88%;
   background-color: var(--primary-blue);
+  border: none;
 }
 
 .third-section {

@@ -90,7 +90,6 @@ a {
 }
 @media only screen and (max-width: 1082px) {
   .header__container > div {
-      display: flex;
       visibility: hidden;
   }
 }
