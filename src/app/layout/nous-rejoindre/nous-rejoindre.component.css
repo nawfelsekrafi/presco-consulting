@@ -382,8 +382,42 @@ textarea:focus {
 .radio-divs {
   display: flex;
   align-items: center;
+  color: var(--primary-blue);
+  display: flex;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 9px;
 }
 
 #oui, #non {
   width: 17px;
+  margin: 0 5px 0 0;
+  visibility: hidden;
+}
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 16px;
+  left: -1px;
+  position: relative;
+  border: 1px solid var(--primary-blue);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 16px;
+  left: -1px;
+  position: relative;
+  border: 1px solid var(--primary-blue);
+  content: '';
+  display: inline-block;
+  background-color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+  visibility: visible;
 }
