@@ -130,7 +130,8 @@ h1 > span {
   color: #fff;
 }
 
-.second-section > button , .fourth-section > button {
+.second-section > button,
+.fourth-section > button {
   border: 1px solid #fff;
   border-radius: 25px;
   padding: 10px 20px;
@@ -152,7 +153,8 @@ h1 > span {
   width: 350px;
 }
 
-.second-section > button:hover, .fourth-section > button:hover  {
+.second-section > button:hover,
+.fourth-section > button:hover {
   transform: translateY(-4px);
 }
 
@@ -245,7 +247,7 @@ hr {
   border-radius: 5px;
 }
 .fourth-section > div > div > button:hover {
-  background: linear-gradient(#1B89CA, #2E3792);
+  background: linear-gradient(#1b89ca, #2e3792);
   color: #fff;
   border: 1px solid var(--primary-blue);
   padding: 5px;
@@ -260,4 +262,69 @@ hr {
 }
 
 .fifth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fifth-section > h1 {
+  color: var(--primary-blue);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.fifth-section > p {
+  text-align: center;
+  line-height: 22px;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.contact-form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid var(--primary-purple);
+}
+input {
+  padding: 6px 10px 6px 20px;
+  width: 420px;
+  height: 52px;
+  font-size: 16px;
+  border: 1px solid #245fab;
+  border-radius: 15px;
+  margin: 0px 30px 30px 0px;
+  background: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+textarea {
+  width: 908px;
+  height: 342px;
+  border-radius: 15px;
+  margin-left: 50px;
+  background: transparent;
+  padding: 14px 10px 6px 20px;
+  border: 1px solid #245fab;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 1px solid var(--primary-purple);
 }
