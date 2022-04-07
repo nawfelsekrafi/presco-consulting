@@ -355,7 +355,6 @@ textarea:focus {
   font-size: 16px;
 }
 
-
 #send-btn {
   border: 1px solid var(--primary-purple);
   border-radius: 25px;
@@ -384,17 +383,18 @@ textarea:focus {
   align-items: center;
   color: var(--primary-blue);
   display: flex;
-    align-items: center;
-    height: 30px;
-    margin-bottom: 9px;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 9px;
 }
 
-#oui, #non {
+#oui,
+#non {
   width: 17px;
   margin: 0 5px 0 0;
   visibility: hidden;
 }
-input[type='radio']:after {
+input[type="radio"]:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -402,12 +402,12 @@ input[type='radio']:after {
   left: -1px;
   position: relative;
   border: 1px solid var(--primary-blue);
-  content: '';
+  content: "";
   display: inline-block;
   visibility: visible;
 }
 
-input[type='radio']:checked:after {
+input[type="radio"]:checked:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -415,7 +415,7 @@ input[type='radio']:checked:after {
   left: -1px;
   position: relative;
   border: 1px solid var(--primary-blue);
-  content: '';
+  content: "";
   display: inline-block;
   background-color: var(--primary-purple);
   border: 1px solid var(--primary-purple);
