@@ -1,0 +1,203 @@
+.qui-sommes-nous__container {
+  margin-bottom: 60px;
+  z-index: 0;
+  margin-top: 87px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 140px;
+}
+
+.nous-sommes {
+  margin: 0;
+  font-size: 31px;
+  color: var(--primary-blue);
+  margin-bottom: 9px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.description > h1 {
+  color: var(--primary-purple);
+}
+
+.presco {
+  color: var(--primary-blue);
+}
+
+.first-section > img {
+  margin-top: 70px;
+  width: 40%;
+}
+p {
+  line-height: 25px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.second-section {
+  margin-top: 112px;
+}
+
+.notre-histoire {
+  color: var(--primary-blue);
+  margin: 0 140px;
+  border-left: 3px solid var(--primary-blue);
+  padding-left: 7px;
+}
+.Ben-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 140px;
+}
+
+.ben-pic {
+  width: 50%;
+  margin-left: 67px;
+}
+
+.third-section {
+  margin: 0 140px;
+}
+.mission {
+  display: flex;
+  margin-top: 72px;
+}
+
+.mission > div {
+  border-right: 3px solid var(--primary-purple);
+  border-bottom: 3px solid var(--primary-purple);
+  text-align: end;
+  padding: 0px 10px 10px 0px;
+}
+.mission > div > h1 {
+  color: var(--primary-purple);
+}
+
+.mission > img {
+  width: 37%;
+}
+
+.vision {
+  display: flex;
+  margin-top: 72px;
+}
+
+.vision > div {
+  border-left: 3px solid var(--primary-blue);
+  border-bottom: 3px solid var(--primary-blue);
+  text-align: start;
+  padding: 0px 0px 10px 10px;
+}
+
+.vision > div > h1 {
+  color: var(--primary-blue);
+}
+
+.vision > img {
+  width: 37%;
+}
+
+.hr-1 {
+  height: 3px;
+  width: 88%;
+  margin-top: 40px;
+  background-color: var(--primary-purple);
+  border: none;
+}
+
+.valeurs {
+  text-align: center;
+}
+.valeurs > h1 {
+  color: var(--primary-purple);
+  margin-top: 30px;
+}
+
+.first-row,
+.second-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-row > div,
+.second-row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.second-row > div:nth-child(2){
+    margin-bottom: 36px;
+}
+
+.first-row > div > div > img {
+  background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.second-row > div > div > img {
+  background: linear-gradient(#1b89ca, #2e3792);
+  border-radius: 100%;
+  padding: 10px;
+}
+.first-row h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 500;
+  color: var(--primary-purple);
+}
+.second-row h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 500;
+  color: var(--primary-blue);
+}
+
+.temoignages {
+  text-align: center;
+  margin-top: 50px;
+}
+.temoignages > h1 {
+  color: var(--primary-blue);
+}
+
+.last-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 140px;
+}
+
+.last-section > div {
+  border-left: 3px solid var(--primary-blue);
+  padding-left: 7px;
+}
+
+.last-section > img {
+  width: 36%;
+}
+
+.last-section > div > h1 {
+  color: var(--primary-blue);
+}
+
+.implantation-h1 {
+  color: var(--primary-purple);
+}
