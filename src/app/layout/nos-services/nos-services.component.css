@@ -1,0 +1,86 @@
+.nos-services__container {
+    margin-bottom: 60px;
+    margin-top: 87px;
+    z-index: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .first-section {
+    background-image: url("../../../assets/Backgound.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75vh;
+    margin: 0px 140px 100px 140px;
+  }
+
+  .first-section div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .first-section > div > h1 {
+    color: var(--primary-blue);
+  }
+  
+  .first-section > img {
+    margin-top: 70px;
+    width: 40%;
+  }
+  .first-section > div > p {
+    font-size: 17;
+    font-weight: 300;
+  }
+  .first-section > div > svg {
+    cursor: pointer;
+  }
+
+  .first-section > div > svg:hover > path {
+    fill: var(--primary-purple);
+    transform: fill 0.3s ease;
+  }
+  
+  h1,.last-section>h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  h1 > span, .last-section>h2 {
+    color: var(--primary-purple);
+  }
+
+  #send-btn {
+    border: 1px solid var(--primary-purple);
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: var(--primary-purple);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    animation: go-up 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
+  }
+  
+  #send-btn:hover {
+    color: #fff;
+    background-color: var(--primary-purple);
+    box-shadow: 0px 15px 20px #d67eb1;
+    transform: translateY(-4px);
+  }
+
+  .last-section{
+    margin: 0 140px;
+    padding: 30px;
+    border: 1px solid var(--primary-purple) ;
+    border-radius: 30px;
+  }
+  
