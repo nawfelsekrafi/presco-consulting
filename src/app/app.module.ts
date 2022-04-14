@@ -10,6 +10,7 @@ import { FaqComponent } from './layout/faq/faq.component';
 import { ContactComponent } from './layout/contact/contact.component';
 import { NousRejoindreComponent } from './layout/nous-rejoindre/nous-rejoindre.component';
 import { QuiSommesNousComponent } from './layout/qui-sommes-nous/qui-sommes-nous.component';
+import { NosServicesComponent } from './layout/nos-services/nos-services.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { QuiSommesNousComponent } from './layout/qui-sommes-nous/qui-sommes-nous
     FaqComponent,
     ContactComponent,
     NousRejoindreComponent,
-    QuiSommesNousComponent
+    QuiSommesNousComponent,
+    NosServicesComponent
   ],
   imports: [
     BrowserModule,
