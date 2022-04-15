@@ -22,6 +22,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   .first-section > div > h1 {
     color: var(--primary-blue);
   }
@@ -34,6 +35,7 @@
     font-size: 17;
     font-weight: 300;
   }
+
   .first-section > div > svg {
     cursor: pointer;
   }
@@ -43,7 +45,7 @@
     transform: fill 0.3s ease;
   }
   
-  h1,.last-section>h2 {
+  h1 , .last-section>h2 {
     text-transform: uppercase;
     font-size: 35px;
     margin: 0;
@@ -76,11 +78,115 @@
     box-shadow: 0px 15px 20px #d67eb1;
     transform: translateY(-4px);
   }
+  #send-btn-blue {
+    border: 1px solid var(--primary-blue);
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: var(--primary-blue);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    animation: go-up 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
+  }
+  
+  #send-btn-blue:hover {
+    color: #fff;
+    background-color: var(--primary-blue);
+    box-shadow: 0px 15px 20px #7eabd6;
+    transform: translateY(-4px);
+  }
 
   .last-section{
     margin: 0 140px;
     padding: 30px;
     border: 1px solid var(--primary-purple) ;
     border-radius: 30px;
+  }
+
+  .blue, .purple {
+    display: flex;
+    margin: 130px 140px;
+    height: 300px;
+    align-items: center;
+  }
+  .blue> div:first-child {
+    width: 310px;
+    height: 310px;
+    width: 317px;
+    height: 317px;
+    border-radius: 100%;
+    padding: 51px;
+    display:flex;
+    align-items: center;
+    background-color: #fff;    
+  }
+  .purple> div:last-child {
+    width: 310px;
+    height: 310px;
+    width: 317px;
+    height: 317px;
+    border-radius: 100%;
+    
+    padding: 51px;
+    display:flex;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  #formations-svg{
+    width: 344px;
+  }
+  #dev-svg{
+    width: 437px;
+  }
+
+  #trans-svg{
+    width: 421px;
+  }
+  #ia-svg{
+    width: 423px;
+  }
+  #formations-txt {
+    padding: 34px 87px 42px 49px;
+  }
+  #ia-txt {
+    padding: 34px 49px 42px  87px;
+  }
+  .blue > div > img, .purple > div >img{
+    height: 209px;
+  }
+
+  .purple >div:last-child {
+    margin-left: -76px;
+    border: 1px solid var(--primary-purple);
+  }
+  .blue > div:first-child {
+    margin-right: -76px;
+    border: 1px solid var(--primary-blue);
+  }
+  .purple > div >h2 {
+    color: var(--primary-purple)
+  }
+  .blue > div > h2 {
+    color: var(--primary-blue);
+  }
+  .blue > div {
+    border: 1px solid var(--primary-blue);
+    margin-right: -32px;
+  }
+  .text {
+    padding: 30px;
+    border-radius: 30px;
+    height: 200px;
+  }
+  .blue > .text {
+    border: 1px solid var(--primary-blue);
+  }
+  .purple > .text {
+    border: 1px solid var(--primary-purple);
   }
   
