@@ -10,7 +10,9 @@ import { FaqComponent } from './layout/faq/faq.component';
 import { ContactComponent } from './layout/contact/contact.component';
 import { NousRejoindreComponent } from './layout/nous-rejoindre/nous-rejoindre.component';
 import { QuiSommesNousComponent } from './layout/qui-sommes-nous/qui-sommes-nous.component';
+import { MatDialogModule } from '@angular/material/dialog';
 import { NosServicesComponent } from './layout/nos-services/nos-services.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { NosServicesComponent } from './layout/nos-services/nos-services.compone
     ContactComponent,
     NousRejoindreComponent,
     QuiSommesNousComponent,
-    NosServicesComponent
+    NosServicesComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatDialogModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

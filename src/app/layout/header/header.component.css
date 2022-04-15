@@ -5,7 +5,7 @@
   justify-content: space-between;
   position: fixed;
   width: 82vw;
-  padding: 0px 140px;
+  padding: 0px 12% 0 9%;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   background-color: rgba(255, 255, 255, 0.85);
@@ -22,7 +22,7 @@ a {
 }
 
 .header__container > div > a {
-  padding: 11px 0px;
+  padding: 14px 0px 0px 0px;
   margin: 20px;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
@@ -68,7 +68,7 @@ a {
 }
 
 #header-icon {
-  width: 15%;
+  width: 123px;
 }
 
 .header__container > div > a:hover:after {
@@ -83,13 +83,29 @@ a {
   color: white;
 }
 
+.list-icon {
+  display: none;
+}
+
+
 @media only screen and (max-width: 1294px) {
   .header__container > div > a  {
   margin: 20px 6px;
 }
 }
 @media only screen and (max-width: 1082px) {
-  .header__container > div {
-      visibility: hidden;
+  .header__container{
+    padding: 0px 12% 0px 9%;
+  }
+  .header__container > div > a {
+      display:none;
+  }
+  .list-icon {
+    display: block;
+    margin: 13px 0px;
+  }
+
+  #header-icon{
+    margin: 14px 0;
   }
 }
