@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   openForm() {
    const dialog =  this.dialog.open(MenuModalComponent, {
       width: '80vw',
-      height: '100vh',
+      height: '80vh',
       maxWidth: '100vw',
     });
 

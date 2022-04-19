@@ -4,6 +4,9 @@
     flex-direction: column;
   }
   
+  .container{
+    overflow: hidden;
+  }
    div > a {
     padding: 14px 0px 0px 0px;
     margin: 20px;
@@ -19,6 +22,8 @@
     background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
     color: white;
   }
+
+
 
   div > a::after {
     display: block;
