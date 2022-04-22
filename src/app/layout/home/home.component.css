@@ -640,32 +640,6 @@ input:focus {
   animation: from-left 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 
-@keyframes from-left {
-  0% {
-    transform: translateX(4rem);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes go-up {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-
-  50%{
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .username>img {
   width: 130px;
   border-radius: 100%;

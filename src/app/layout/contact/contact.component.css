@@ -193,16 +193,6 @@ hr {
   align-items: center;
 }
 
-@keyframes go-up {
-  0% {
-    transform: translateY(50rem);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 @media only screen and (max-width: 1220px) {
   textarea {
     width: 699px;

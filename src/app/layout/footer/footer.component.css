@@ -112,6 +112,9 @@ h2 {
 }
 
 @media only screen and (max-width: 1180px) {
+  .footer__container{
+    border-radius: 0;
+  }
   #footer-logo {
     width: 26%;
   }

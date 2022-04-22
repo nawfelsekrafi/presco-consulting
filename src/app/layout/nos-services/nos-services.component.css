@@ -190,19 +190,3 @@
     border: 1px solid var(--primary-purple);
   }
   
-
-  @keyframes go-up {
-    0% {
-      transform: translateY(2rem);
-      opacity: 0;
-    }
-  
-    50%{
-      opacity: 0.5;
-    }
-  
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }

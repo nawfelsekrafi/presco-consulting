@@ -28,7 +28,7 @@ input[type="file"] {
   align-items: center;
   height: 75vh;
   margin-bottom: 100px;
-  margin: 0px 140px 100px 140px;
+  padding: 0px 140px 100px 140px;
 }
 
 .first-section div {
@@ -423,4 +423,26 @@ input[type="radio"]:checked:after {
   background-color: var(--primary-purple);
   border: 1px solid var(--primary-purple);
   visibility: visible;
+}
+
+@media only screen and (max-width: 1220px) {
+  /* .first-section{
+    flex-direction: column;
+    text-align: center;
+  } */
+}
+
+@media only screen and (max-width: 786px) {
+  .first-section{
+    flex-direction: column;
+    text-align: center;
+  padding: 0 40px;
+  padding: 35px 40px 0 40px;
+  }
+}
+@media only screen and (max-width: 619px) {
+  .first-section > img{
+    margin-top: 25px;
+    width: 61%;
+}
 }
