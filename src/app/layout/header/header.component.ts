@@ -36,6 +36,9 @@ export class HeaderComponent implements OnInit {
         case 'faq':
           this.router.navigate(['faq']);
           break;
+        case 'nous-rejoindre':
+          this.router.navigate(['nous-rejoindre']);
+          break;
         case 'contactez-nous':
           this.router.navigate(['contactez-nous']);
           break;
