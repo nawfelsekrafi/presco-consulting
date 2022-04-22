@@ -9,25 +9,25 @@
   font-family: "Montserrat", sans-serif;
   position: relative;
 }
-.footer__container > div:nth-child(1) {
+.footer__container > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
 }
-.footer__container > div:nth-child(1) > div:nth-child(1) {
+.footer__container > div:nth-child(2) > div:nth-child(1) {
   width: 32%;
   display: flex;
   flex-direction: column;
   padding-right: 29px;
 }
-.footer__container > div:nth-child(1) > div:nth-child(2) {
+.footer__container > div:nth-child(2) > div:nth-child(2) {
   width: 22%;
 }
-.footer__container > div:nth-child(1) > div:nth-child(3) {
+.footer__container > div:nth-child(2) > div:nth-child(3) {
   width: 23%;
 }
 
 #footer-logo {
-    width: 11%;
+  width: 11%;
 }
 
 a {
@@ -76,11 +76,10 @@ p {
   font-size: 13px;
   text-align: center;
   background-size: cover;
-  background-position-y: 88px;
+  background-position-y: 50px;
   background-repeat: no-repeat;
-  margin: 40px -36px 0px -36px;
+  margin: 9px -36px 0px -36px;
   padding: 0px;
-  height: 140px;
 }
 .copy-right > hr {
   border: none;
@@ -111,24 +110,26 @@ h2 {
   align-items: flex-start;
 }
 
-
 @media only screen and (max-width: 1180px) {
-    #footer-logo {
-        width: 26%;
-    }
-    .footer__container> div:nth-child(1) > div {
-        width: initial !important;
-    }
-    .footer__container > div:nth-child(1) {
-        display: grid;
-        grid-template-columns: 50% 39%;
-        justify-content: center;
-        align-items: start;    
-        justify-items: start;
-}
+  #footer-logo {
+    width: 26%;
+  }
+  .footer__container > div:nth-child(2) > div {
+    width: initial !important;
+  }
+  .footer__container > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 50% 39%;
+    justify-content: center;
+    align-items: start;
+    justify-items: start;
+  }
+  #informations , .links, .copy-right , .solutions{
+    display: none;
+  }
 }
 @media only screen and (max-width: 612px) {
-    .footer__container > div:nth-child(1) {
-        grid-template-columns: 100%;
-}
+  .footer__container > div:nth-child(2) {
+    grid-template-columns: 100%;
+  }
 }
