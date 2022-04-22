@@ -21,15 +21,18 @@
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
+    animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
   }
 
   .first-section > div > h1 {
     color: var(--primary-blue);
+    animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
   }
   
   .first-section > img {
     margin-top: 70px;
     width: 40%;
+    animation: from-left 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
   }
   .first-section > div > p {
     font-size: 17;
@@ -187,3 +190,19 @@
     border: 1px solid var(--primary-purple);
   }
   
+
+  @keyframes go-up {
+    0% {
+      transform: translateY(2rem);
+      opacity: 0;
+    }
+  
+    50%{
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

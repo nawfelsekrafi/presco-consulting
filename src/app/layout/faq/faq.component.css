@@ -19,6 +19,7 @@
   color: var(--primary-blue);
   text-align: center;
   margin-bottom: 20px;
+  animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 
 .faq__main {
@@ -39,6 +40,7 @@
 
 .faq__illustration > img {
   width: 79%;
+  animation: from-right 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 
 input {
@@ -110,6 +112,7 @@ input:checked + label > .minus {
   padding: 10px 10px 10px 39px;
   box-shadow: 1px 6px 12px 2px rgb(86 73 73 / 20%);
   border-radius: 15px;
+  animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 
 .faq__illustration {

@@ -28,6 +28,7 @@ input[type="file"] {
   align-items: center;
   height: 75vh;
   margin-bottom: 100px;
+  margin: 0px 140px 100px 140px;
 }
 
 .first-section div {
@@ -35,14 +36,17 @@ input[type="file"] {
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
+  animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 .first-section > div > h1 {
   color: var(--primary-blue);
+  animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 
 .first-section > img {
   margin-top: 70px;
   width: 40%;
+  animation: from-left 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
 }
 .first-section > div > p {
   font-size: 17;

@@ -41,3 +41,39 @@ p {
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@keyframes from-left {
+    0% {
+      transform: translateX(4rem);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes from-right {
+    0% {
+      transform: translateX(-4rem);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes go-up {
+    0% {
+      transform: translateY(2rem);
+      opacity: 0;
+    }
+  
+    50%{
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
