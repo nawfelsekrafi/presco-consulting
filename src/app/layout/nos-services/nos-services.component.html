@@ -3,13 +3,13 @@
         <div class="description">
             <h1><span>Nos offres </span>de services</h1>
             <p>Des services sur mesure pour vous accompagner sur vos problématiques clés.<br></p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="23.174" height="14.31" viewBox="0 0 23.174 14.31">
+            <svg  (click)="scrollToElement(second)" xmlns="http://www.w3.org/2000/svg" width="23.174" height="14.31" viewBox="0 0 23.174 14.31">
                 <path id="ic_expand_more_24px" d="M26.451,8.59l-8.864,8.845L8.723,8.59,6,11.313,17.587,22.9,29.174,11.313Z" transform="translate(-6 -8.59)" fill="#245fab"/>
               </svg>
         </div>
         <img src="assets/Nos Services principaux.svg" alt="" class="first-section_illustraion">
     </section>
-    <section class="purple">
+    <section class="purple" #second>
         <div class="text" id="formations-txt">
             <h2>Formations</h2>
             <p>Nous mettons un point d'honneur à partager notre savoir. Nos formations vous

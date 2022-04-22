@@ -12,4 +12,8 @@ export class NosServicesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToElement($element: any): void {
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
+
 }
