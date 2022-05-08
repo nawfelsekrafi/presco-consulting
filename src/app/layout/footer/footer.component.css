@@ -112,11 +112,15 @@ h2 {
 }
 
 @media only screen and (max-width: 1180px) {
-  .footer__container{
+  .footer__container {
     border-radius: 0;
+    position: relative;
   }
   #footer-logo {
-    width: 26%;
+    width: 129px;
+    position: absolute;
+    top: 67px;
+    left: 88px;
   }
   .footer__container > div:nth-child(2) > div {
     width: initial !important;
@@ -128,12 +132,40 @@ h2 {
     align-items: end;
     justify-items: start;
   }
-  #informations , .links, .copy-right , .solutions{
+  .social-media {
+    margin-bottom: 93px;
+  }
+  .copy-right >  hr {
+    margin-left: 0px;
+  }
+  .copy-right {
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 50%;
+    margin: 15px 9px 0px 54px;
+    text-align: left;
+    background-image: none;
+  }
+  #informations,
+  .links,
+  .solutions {
     display: none;
   }
 }
 @media only screen and (max-width: 612px) {
   .footer__container > div:nth-child(2) {
     grid-template-columns: 100%;
+  }
+  .copy-right {
+    display:none;
+  }
+  .social-media {
+    margin-bottom: 0px;
+  }
+  #footer-logo {
+    position: absolute;
+    top: 5px;
+    left: 34px;
   }
 }

@@ -23,6 +23,7 @@ export class HeaderComponent implements OnInit {
     });
 
     dialog.afterClosed().subscribe(response => {
+      if (!response.res)return;
       switch(response.res){
         case 'accueil':
           this.router.navigate(['accueil']);

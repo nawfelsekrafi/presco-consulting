@@ -101,7 +101,7 @@ a {
 
 @media only screen and (max-width: 1294px) {
   .header__container > div > a  {
-  margin: 20px 6px;
+    margin: 8px 6px;
 }
 }
 @media only screen and (max-width: 1082px) {
