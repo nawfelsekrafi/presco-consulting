@@ -283,6 +283,12 @@ hr {
   align-items: center;
 }
 
+.fifth-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fifth-section > h1 {
   color: var(--primary-blue);
   margin-top: 30px;
@@ -338,6 +344,7 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  margin-right: 30px;
 }
 
 textarea:focus {
@@ -352,11 +359,12 @@ textarea:focus {
   font-size: 22px;
 }
 
-.terms {
-  text-align: start;
+.terms, .fifth-section > p {
+  text-align: center;
   line-height: 22px;
   font-weight: 300;
   font-size: 16px;
+  margin: 33px 37px;
 }
 
 #send-btn {
@@ -435,6 +443,15 @@ input[type="radio"]:checked:after {
   .third-section > div > div {
     margin: 25px 0px 7px 0px;
   }
+  textarea {
+    width: 699px;
+    height: 212px;
+  }
+  input {
+    width: 315px;
+    height: 49px;
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 980px) {
@@ -450,6 +467,7 @@ input[type="radio"]:checked:after {
 
   .first-section > div {
     align-items: center;
+    text-align: center;
   }
   .third-section > div > div {
     margin: 31px 0px 7px 0px;
@@ -471,12 +489,21 @@ input[type="radio"]:checked:after {
   .second-section > button {
     margin-top: 25px;
   }
+  textarea {
+    width: 524px;
+    height: 212px;
+  }
+  input {
+    width: 236px;
+    height: 36px;
+    font-size: 16px;
+  }
 
   .second-section > div:nth-child(3) > img {
-    width: 70%;
+    width: 30%;
   }
   .second-section > div > img {
-    width: 70%;
+    width: 30%;
   }
   .second-section > div > div > h1 {
     text-align: center;
@@ -486,7 +513,29 @@ input[type="radio"]:checked:after {
     padding: 36px 24px;
   }
 }
+
+@media only screen and (max-width: 877px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .fourth-section > div > div {
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    margin: 6px 0px 0px 0px;
+  }
+ 
+  .fourth-section > div > div > h2 {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 619px) {
+  .second-section > div:nth-child(3) > img {
+    width: 70%;
+  }
+  .second-section > div > img {
+    width: 70%;
+  }
   .first-section > img {
     margin-top: 25px;
     width: 61%;
@@ -499,12 +548,33 @@ input[type="radio"]:checked:after {
   }
   h1 {
     font-size: 31px;
+    text-align: center;
+  }
+  textarea {
+    width: 78%;
+    height: 100px;
+    margin-right: 0px;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-section > div > p {
+    margin: 33px 23px 36px 23px;
+  }
+  input {
+    margin-right: 0;
+  }
+  h2 {
+    font-size: 22px;
   }
 
   .fourth-section > div > div {
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
+    margin: 6px 0px 0px 0px;
   }
+ 
   .fourth-section > div > div > h2 {
     text-align: center;
   }

@@ -142,6 +142,7 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  margin-right: 30px;
 }
 
 textarea:focus {
@@ -224,9 +225,8 @@ hr {
   }
 
   textarea {
-    width: 524px;
+    width: 533px;
     height: 212px;
-    margin-right: 0px;
   }
   input {
     width: 236px;
@@ -257,5 +257,8 @@ hr {
   }
   .first-section > div > p {
     margin: 8px 23px;
+  }
+  input {
+    margin-right: 0;
   }
 }
