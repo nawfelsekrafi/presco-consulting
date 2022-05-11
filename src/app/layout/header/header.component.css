@@ -7,12 +7,12 @@
   width: 82vw;
   padding: 0px 12% 0 9%;
   backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(255,255,255,0.72);
+  background-color: rgba(255, 255, 255, 0.72);
   margin-top: -87px;
   z-index: 100;
 }
 
-.header__container::after{
+.header__container::after {
   margin-left: -490px;
   content: "";
   display: block;
@@ -21,7 +21,7 @@
   width: 365%;
   height: 1px;
   z-index: 1;
-  background-color: rgba(0,0,0,0.16);
+  background-color: rgba(0, 0, 0, 0.16);
 }
 
 a {
@@ -49,7 +49,7 @@ a {
   transition: transform 250ms ease-in-out;
 }
 .header__container > div > a:hover {
- color: var(--primary-blue);
+  color: var(--primary-blue);
 }
 
 .header-contact-btn {
@@ -60,9 +60,9 @@ a {
   color: #fff;
   /* background-position: 0 38px; */
   -webkit-transition: all 0.2s linear;
-     -moz-transition: all 0.2s linear;
-       -o-transition: all 0.2s linear;
-          transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .header-contact-btn::after .header-contact-btn:hover::after {
   display: block;
@@ -98,47 +98,57 @@ a {
   display: none;
 }
 
-
 @media only screen and (max-width: 1294px) {
-  .header__container > div > a  {
-    margin: 
-    8px 6px;
-}
+  .header__container > div > a {
+    margin: 8px 6px;
+  }
 }
 @media only screen and (max-width: 1082px) {
-  .header__container{
+  .header__container {
     padding: 0px 12% 0px 9%;
   }
   .header__container > div > a {
-      display:none;
+    display: none;
   }
   .list-icon {
     display: block;
     margin: 13px 0px;
   }
 
-  #header-icon{
+  #header-icon {
     margin: 14px 0;
   }
 }
 
-#menu{
-  position: absolute;
-  top: 0;
+.menu {
+  position: fixed;
   right: 0;
-  background-color: white;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   z-index: 10;
   height: 0;
-  padding: 0px 0px 0px 28px;
   align-items: center;
   visibility: hidden;
-  opacity: 0;
-  transition: all .5s;
+  /* opacity: 0; */
+  transition: height 0.4s ease-in;
+  background: white;
+  top: 64px;
+  border-radius: 0 0 21px 21px;
+  padding: 0px 28px;
+  justify-content: flex-start;
+  border: 1px solid gray;
 }
 
-#menu > a{
-  margin: 10px 0px;
+.menu > a {
+  margin: 18px 0px;
+  opacity: 0;
+}
+
+.show {
+  height: 70%;
+  visibility: visible;
+}
+.show > a {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.5s;
 }
