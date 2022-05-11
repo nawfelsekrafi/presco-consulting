@@ -101,7 +101,8 @@ a {
 
 @media only screen and (max-width: 1294px) {
   .header__container > div > a  {
-    margin: 8px 6px;
+    margin: 
+    8px 6px;
 }
 }
 @media only screen and (max-width: 1082px) {
@@ -119,4 +120,25 @@ a {
   #header-icon{
     margin: 14px 0;
   }
+}
+
+#menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  z-index: 10;
+  height: 0;
+  padding: 0px 0px 0px 28px;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s;
+}
+
+#menu > a{
+  margin: 10px 0px;
 }

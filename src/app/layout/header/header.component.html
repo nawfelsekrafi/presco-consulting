@@ -1,7 +1,7 @@
 <div class="header__container">
     <img id="header-icon" src="assets/Presco Consulting Logo.svg" alt="">
     <div>
-        <img (click)="openForm()" src="assets/icon-menu.svg" alt="" class="list-icon" id="list-icon">
+        <img (click)="toggleMenu()" src="assets/icon-menu.svg" alt="" class="list-icon" id="list-icon">
         <a routerLink="accueil" routerLinkActive="menu-active">ACCUEIL</a>
         <a routerLinkActive="menu-active" routerLink="qui-sommes-nous">QUI SOMMES-NOUS ?</a>
         <a routerLinkActive="menu-active" routerLink="nos-services">NOS SERVICES</a>
@@ -10,4 +10,13 @@
         <a routerLinkActive="menu-active-btn" routerLink="contactez-nous" class="header-contact-btn">NOUS CONTACTER</a>
         <!-- <a routerLinkActive="menu-active" href="#"><img src="assets/Search Icon.svg" alt=""></a> -->
     </div>
+</div>
+
+<div id="menu" (click)="hideMenu()">
+    <a routerLink="accueil" routerLinkActive="menu-active">ACCUEIL</a>
+    <a routerLinkActive="menu-active" routerLink="qui-sommes-nous">QUI SOMMES-NOUS ?</a>
+    <a routerLinkActive="menu-active" routerLink="nos-services">NOS SERVICES</a>
+    <a routerLinkActive="menu-active" routerLink="nous-rejoindre">NOUS REJOINDRE</a>
+    <a routerLinkActive="menu-active" routerLink="faq">FAQ</a>
+    <a routerLinkActive="menu-active-btn" routerLink="contactez-nous" class="header-contact-btn">NOUS CONTACTER</a>
 </div>

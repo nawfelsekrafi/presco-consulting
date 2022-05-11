@@ -516,7 +516,7 @@ input[type="radio"]:checked:after {
 
 @media only screen and (max-width: 877px) {
   h2 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 
   .fourth-section > div > div {
@@ -547,7 +547,7 @@ input[type="radio"]:checked:after {
     width: 75%;
   }
   h1 {
-    font-size: 31px;
+    font-size: 31px !important;
     text-align: center;
   }
   textarea {
@@ -588,7 +588,7 @@ input[type="radio"]:checked:after {
     text-align: center;
   }
   .third-section > div > div > img {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .third-section > div > div {
     flex-direction: column;
