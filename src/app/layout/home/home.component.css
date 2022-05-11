@@ -397,10 +397,10 @@ input:focus {
   background: linear-gradient(-45deg, #f94f06,#f9ce22);
 }
 .training:nth-child(6) {
-  background: linear-gradient(-45deg, #06beb6, #48b1bf);
+  background: linear-gradient(-45deg, #06beb6, #06ffff);
 }
 .training:nth-child(6):hover {
-  background: linear-gradient(45deg, #06beb6, #48b1bf);
+  background: linear-gradient(45deg, #06beb6, #06ffff);
 }
 
 .training > div > svg > path {
