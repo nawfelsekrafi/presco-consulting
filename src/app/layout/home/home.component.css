@@ -10,6 +10,7 @@ h1,
 .hero__section {
   margin: 0px -140px;
   background-image: url("../../../assets/Waimakariri 01.svg");
+  background-attachment: fixed;
   padding: 0px 140px;
   background-position: -111px -233px;
   background-repeat: no-repeat;
@@ -18,11 +19,13 @@ h1,
   background-image: url("../../../assets/Waimakariri 02.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .contact__section {
   background-image: url("../../../assets/Waimakariri 03.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero__section,
