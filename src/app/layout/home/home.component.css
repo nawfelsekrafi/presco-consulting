@@ -173,10 +173,11 @@ input:focus {
 }
 
 .project:nth-child(1) {
-  background: linear-gradient(45deg, #dd5e89, #f7bb97);
+  /* background: linear-gradient(45deg, #dd5e89, #f7bb97); */
+  background: linear-gradient(45deg, #753a88,#cc2b5e);
 }
 .project:nth-child(1):hover {
-  background: linear-gradient(-45deg, #dd5e89, #f7bb97);
+  background: linear-gradient(-45deg, #753a88,#cc2b5e);
 }
 .project:nth-child(2) {
   background: linear-gradient(45deg, #cc2b5e, #753a88);
@@ -186,10 +187,12 @@ input:focus {
 }
 
 .project:nth-child(3) {  
-  background: linear-gradient(45deg, #d66d75, #e29587);
+  /* background: linear-gradient(45deg, #d66d75, #e29587); */
+  background: linear-gradient(45deg, #753a88,#cc2b5e);
 }
 .project:nth-child(3):hover {
-  background: linear-gradient(-45deg, #d66d75, #e29587);
+  /* background: linear-gradient(-45deg, #d66d75, #e29587); */
+  background: linear-gradient(-45deg, #753a88,#cc2b5e);
 }
 
 
