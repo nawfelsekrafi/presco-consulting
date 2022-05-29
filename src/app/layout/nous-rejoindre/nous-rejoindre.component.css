@@ -20,8 +20,9 @@ input[type="file"] {
 }
 
 .first-section {
-  background-image: url("../../../assets/Backgound.svg");
-  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../../../assets/Waimakariri 01.svg");
+  background-position: -111px -233px;
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;

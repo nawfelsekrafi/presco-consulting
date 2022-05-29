@@ -9,9 +9,9 @@ h1,
 }
 .hero__section {
   margin: 0px -140px;
-  background-image: url("../../../assets/Waimakariri 01.svg");
-  background-attachment: fixed;
   padding: 0px 140px;
+  background-attachment: fixed;
+  background-image: url("../../../assets/Waimakariri 01.svg");
   background-position: -111px -233px;
   background-repeat: no-repeat;
 }
@@ -243,14 +243,6 @@ input:focus {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   -moz-transition: all 1s;
-}
-
-.project:nth-child(2n) > a {
-  /* color: var(--primary-blue); */
-}
-
-.project:nth-child(2n + 1) > a {
-  /* color: var(--primary-purple); */
 }
 
 /* .project:nth-child(2n + 1):hover {
@@ -498,13 +490,6 @@ input:focus {
   border: none;
   
 } */
-.training:nth-child(2n + 1):hover {
-  /* background: linear-gradient(#1b89ca, #2e3792); */
-  /* background: linear-gradient(-45deg, #005eea, #00c0fb); */
-  /* box-shadow: 1px 1px 15px -4px rgba(36, 95, 171, 0.4); */
-  /* -webkit-box-shadow: 1px 1px 125px -4px rgba(36, 95, 171, 0.4); */
-  /* -moz-box-shadow: 1px 1px 125px -4px rgba(36, 95, 171, 0.4); */
-}
 /* .training:nth-child(2n):hover {
   background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
   background: linear-gradient(#ff1149,#ffa995);

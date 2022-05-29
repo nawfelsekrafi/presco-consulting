@@ -80,6 +80,7 @@ a {
 
 #header-icon {
   width: 123px;
+  cursor: s;
 }
 
 .header__container > div > a:hover:after {
