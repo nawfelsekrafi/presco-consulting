@@ -24,7 +24,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     NousRejoindreComponent,
     QuiSommesNousComponent,
+<<<<<<< HEAD
+    NosServicesComponent    
+=======
     NosServicesComponent,
+>>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   ],
   imports: [
     BrowserModule,
