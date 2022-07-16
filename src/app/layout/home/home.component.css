@@ -1,13 +1,9 @@
 .home__container {
-<<<<<<< HEAD
   padding: 0px 140px 0px 140px;
   background-attachment: fixed;
   background-image: url("../../../assets/Waimakariri 01.svg");
   background-position: -111px -233px;
   background-repeat: no-repeat;
-=======
-  margin: 87px 140px 0px 140px;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
 }
 
 h1,
@@ -16,7 +12,6 @@ h1,
   text-transform: uppercase;
 }
 .hero__section {
-<<<<<<< HEAD
   padding: 87px 0px 0px 0px;
 
   /* background-attachment: fixed;
@@ -35,26 +30,6 @@ h1,
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; */
-=======
-  margin: 0px -140px;
-  padding: 0px 140px;
-  background-attachment: fixed;
-  background-image: url("../../../assets/Waimakariri 01.svg");
-  background-position: -111px -233px;
-  background-repeat: no-repeat;
-}
-.partners__section {
-  background-image: url("../../../assets/Waimakariri 02.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.contact__section {
-  background-image: url("../../../assets/Waimakariri 03.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
 }
 
 .hero__section,
@@ -171,15 +146,9 @@ input:focus {
 }
 
 .trainings-projects {
-<<<<<<< HEAD
   background: linear-gradient(#ffffff, #d1d1d1);
   text-align: center;
   border-radius: 80px;
-=======
-  /* background: linear-gradient(#ffffff, #d1d1d1); */
-  text-align: center;
-  border-radius: 0px 0px 80px 80px;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   padding: 30px 0px;
 }
 
@@ -195,13 +164,8 @@ input:focus {
   font-size: 35px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-<<<<<<< HEAD
   color: var(--primary-blue);
   /* color: white; */
-=======
-  /* color: var(--primary-blue); */
-  color: white;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
 }
 
 .project {
@@ -211,27 +175,16 @@ input:focus {
   padding: 25px 30px;
 }
 
-<<<<<<< HEAD
 .project {
-=======
-.project{
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   color: white;
 }
 
 .project:nth-child(1) {
   /* background: linear-gradient(45deg, #dd5e89, #f7bb97); */
-<<<<<<< HEAD
   background: linear-gradient(45deg, #753a88, #cc2b5e);
 }
 .project:nth-child(1):hover {
   background: linear-gradient(-45deg, #753a88, #cc2b5e);
-=======
-  background: linear-gradient(45deg, #753a88,#cc2b5e);
-}
-.project:nth-child(1):hover {
-  background: linear-gradient(-45deg, #753a88,#cc2b5e);
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
 }
 .project:nth-child(2) {
   background: linear-gradient(45deg, #cc2b5e, #753a88);
@@ -240,7 +193,6 @@ input:focus {
   background: linear-gradient(-45deg, #cc2b5e, #753a88);
 }
 
-<<<<<<< HEAD
 .project:nth-child(3) {
   /* background: linear-gradient(45deg, #d66d75, #e29587); */
   background: linear-gradient(45deg, #753a88, #cc2b5e);
@@ -250,18 +202,6 @@ input:focus {
   background: linear-gradient(-45deg, #753a88, #cc2b5e);
 }
 
-=======
-.project:nth-child(3) {  
-  /* background: linear-gradient(45deg, #d66d75, #e29587); */
-  background: linear-gradient(45deg, #753a88,#cc2b5e);
-}
-.project:nth-child(3):hover {
-  /* background: linear-gradient(-45deg, #d66d75, #e29587); */
-  background: linear-gradient(-45deg, #753a88,#cc2b5e);
-}
-
-
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
 .project:nth-child(2n + 1) > h2 {
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
@@ -329,17 +269,10 @@ input:focus {
 }
 
 .project > a > span {
-<<<<<<< HEAD
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   -moz-transition: all 0.3s;
-=======
-  transition: all .3s;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  -moz-transition: all .3s;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   margin-right: 8px;
   visibility: hidden;
 }
@@ -352,21 +285,12 @@ input:focus {
 .project:hover > a {
   color: #fff;
 }
-<<<<<<< HEAD
 .svp {
   visibility: hidden;
   transition: visibility 0.3s;
 }
 
 .project:hover .svp {
-=======
-.svp{
-  visibility: hidden;
-  transition: visibility .3s;
-}
-
-.project:hover  .svp{
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   visibility: visible;
 }
 
@@ -447,7 +371,6 @@ input:focus {
   background: linear-gradient(45deg, #005eea, #00c0fb);
 }
 .training:nth-child(2) {
-<<<<<<< HEAD
   background: linear-gradient(45deg, #ff1149, #ffa995);
 }
 .training:nth-child(2):hover {
@@ -473,33 +396,6 @@ input:focus {
 }
 .training:nth-child(5):hover {
   background: linear-gradient(-45deg, #f94f06, #f9ce22);
-=======
-  background: linear-gradient(45deg, #ff1149,#ffa995);
-}
-.training:nth-child(2):hover {
-  background: linear-gradient(-45deg, #ff1149,#ffa995);
-}
-.training:nth-child(2):hover {
-  background: linear-gradient(-45deg, #ff1149,#ffa995);
-}
-.training:nth-child(3) {
-  background: linear-gradient(-45deg, #dcb218,#f6e061);
-}
-.training:nth-child(3):hover {
-  background: linear-gradient(45deg, #dcb218,#f6e061);
-}
-.training:nth-child(4) {
-  background: linear-gradient(-45deg, #42b6fe,#02f1fe);
-}
-.training:nth-child(4):hover {
-  background: linear-gradient(45deg, #42b6fe,#02f1fe);
-}
-.training:nth-child(5) {
-  background: linear-gradient(45deg, #f94f06,#f9ce22);
-}
-.training:nth-child(5):hover {
-  background: linear-gradient(-45deg, #f94f06,#f9ce22);
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
 }
 .training:nth-child(6) {
   background: linear-gradient(-45deg, #06beb6, #06ffff);
@@ -875,7 +771,6 @@ input:focus {
 }
 
 @media only screen and (max-width: 980px) {
-<<<<<<< HEAD
   .home__container {
     margin: 0px 140px;
     padding: 0px;
@@ -895,10 +790,6 @@ input:focus {
     background-image: url("../../../assets/Waimakariri 01.svg");
     background-position: -111px -233px;
     background-repeat: no-repeat;
-=======
-  .hero__section {
-    padding: 35px 40px 0 40px;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   }
   .contact-illustration {
     width: 58%;

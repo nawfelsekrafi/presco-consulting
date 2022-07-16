@@ -3,11 +3,7 @@
   justify-content: flex-start;
   margin-bottom: 60px;
   z-index: 0;
-<<<<<<< HEAD
   padding-top: 87px;
-=======
-  margin-top: 87px;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   background-image: url("../../../assets/Waimakariri 02.svg");
@@ -154,10 +150,7 @@ input:checked + label > .minus {
     width: 100%;
   }
 }
-<<<<<<< HEAD
 
 p{
   font-weight: 300;
 }
-=======
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2

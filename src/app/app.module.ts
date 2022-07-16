@@ -11,7 +11,6 @@ import { ContactComponent } from './layout/contact/contact.component';
 import { NousRejoindreComponent } from './layout/nous-rejoindre/nous-rejoindre.component';
 import { QuiSommesNousComponent } from './layout/qui-sommes-nous/qui-sommes-nous.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { NosServicesComponent } from './layout/nos-services/nos-services.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -24,11 +23,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     NousRejoindreComponent,
     QuiSommesNousComponent,
-<<<<<<< HEAD
-    NosServicesComponent    
-=======
-    NosServicesComponent,
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   ],
   imports: [
     BrowserModule,

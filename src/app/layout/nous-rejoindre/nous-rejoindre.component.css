@@ -13,15 +13,9 @@ input[type="file"] {
 }
 
 .rejoindre__container {
-<<<<<<< HEAD
   /* margin-bottom: 60px; */
   z-index: 0;
   /* margin-top: 87px; */
-=======
-  margin-bottom: 60px;
-  z-index: 0;
-  margin-top: 87px;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   font-family: "Montserrat", sans-serif;
 }
 
@@ -34,14 +28,9 @@ input[type="file"] {
   justify-content: space-around;
   align-items: center;
   height: 75vh;
-<<<<<<< HEAD
   
   /* margin-bottom: 100px; */
   padding: 85px 140px 100px 140px;
-=======
-  margin-bottom: 100px;
-  padding: 0px 140px 100px 140px;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
 }
 
 .first-section div {
@@ -294,14 +283,11 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
   background-attachment: fixed;
   background-image: url("../../../assets/Waimakariri 01.svg");
   background-position: -111px -233px;
   background-repeat: no-repeat;
   padding-bottom: 60px;
-=======
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
 }
 
 .fifth-section > div {
@@ -455,7 +441,6 @@ input[type="radio"]:checked:after {
 }
 
 @media only screen and (max-width: 1180px) {
-<<<<<<< HEAD
   .first-section{
     padding-top: 87px;
   }
@@ -463,11 +448,6 @@ input[type="radio"]:checked:after {
     width: 37%;
   }
   
-=======
-  .first-section > img {
-    width: 37%;
-  }
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   .second-section {
     padding: 0 40px;
   }
@@ -490,11 +470,7 @@ input[type="radio"]:checked:after {
     flex-direction: column;
     align-items: center;
     padding: 0 40px;
-<<<<<<< HEAD
     padding: 90px 40px 0 40px;
-=======
-    padding: 35px 40px 0 40px;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   }
   .third-section {
     padding: 0 40px;
@@ -515,13 +491,8 @@ input[type="radio"]:checked:after {
     justify-content: center;
   }
   .second-section > div > img {
-<<<<<<< HEAD
     margin-left: 0 !important;
     margin-right: 0 !important;
-=======
-    margin-left: 0;
-    margin-right: 0;
->>>>>>> 86506d5b23151c220bd7448a47f1b740b18e7be2
   }
   .second-section > div > div {
     align-items: center;

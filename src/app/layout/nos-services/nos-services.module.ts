@@ -21,7 +21,8 @@ const routes = [
     FormationsComponent,
     TransformationDigitaleComponent,
     IaComponent,
-    UxDeveloppementComponent
+    UxDeveloppementComponent,
+    NosServicesComponent
   ],
   imports: [
     RouterModule.forChild(routes),
