@@ -180,10 +180,11 @@ p {
 }
 
 .last-section {
-  margin: 0 140px;
+  margin: 50px 140px 0px 140px;
   padding: 30px;
   border: 1px solid var(--primary-blue);
   border-radius: 30px;
+  
 }
 
 .text {
