@@ -15,4 +15,7 @@ export class NousRejoindreComponent implements OnInit {
   scrollToElement($element: any): void {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
+scrollToElementRejoindre($element: any): void {
+  $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
 }

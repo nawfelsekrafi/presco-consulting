@@ -1,0 +1,130 @@
+.container {
+  padding-bottom: 60px;
+  z-index: 0;
+  font-family: "Montserrat", sans-serif;
+  background-position: -111px -233px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../../../../assets/Backgound.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-blue);
+}
+h3 > span {
+  color: var(--primary-purple);
+}
+
+.last-section > div {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 45% 10% 45%;
+    padding: 0px 140px;
+}
+.last-section h3 {
+    text-align: center;
+}
+.last-section > div > div {
+    display: flex;
+    flex-direction: column;
+}
+.last-section > div > div:first-child {
+    justify-content: space-between;
+}
+.last-section > div > div:last-child {
+    justify-content: space-evenly;
+}
+
+.first-section_illustraion {
+  width: 344px;
+  margin-top: 70px;
+  animation: from-left 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
+}
+
+.first-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 580px;
+  margin: 0px 140px 100px 140px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
+}
+
+.description > h1 {
+  color: var(--primary-purple);
+  animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
+}
+
+.description > p {
+  font-size: 17;
+  font-weight: 300;
+  text-align: center;
+}
+p {
+    font-size: 17;
+    font-weight: 300;
+}
+
+.description > svg {
+  cursor: pointer;
+}
+
+.description svg:hover > path {
+  fill: var(--primary-purple);
+  transform: fill 0.3s ease;
+}
+
+h5 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.h5-purple {
+    color: var(--primary-purple);
+}
+.h5-blue {
+    color: var(--primary-blue)
+}
+h1,
+.last-section > h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 > span,
+.last-section > h2 {
+  color: var(--primary-purple);
+}
+h1 > span {
+  color: var(--primary-blue);
+}
+
+#rectangle-1 {
+  z-index: 11;
+  position: absolute;
+  left: -121px;
+  bottom: -118px;
+  width: 244px;
+}
+
+mat-tab-group {
+  height: 50vh;
+  z-index: 0;
+}

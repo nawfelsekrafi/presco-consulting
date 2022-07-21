@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
+
+import { Cours } from '../../models/cours';
 
 @Component({
   selector: 'app-cours',
@@ -9,22 +10,10 @@ import { EventEmitter } from 'stream';
 export class CoursComponent implements OnInit {
 
   @Input()
-  nom: string = "cours";
+  cours: Cours = new Cours() ;
 
-  @Input()
-  certifiant: boolean = true;
-
-  @Input()
-  duree: string = "x h/ x j";
-
-  @Input()
-  couleur: string = "blue" || "purple";
-
-  @Input()
-  prochaineSession : string = "";
-
-  @Output()
-  OpenCours$ : EventEmitter = new EventEmitter();
+  // @Output()
+  // OpenCours$ : EventEmitter = new EventEmitter();
 
   constructor() { }
 

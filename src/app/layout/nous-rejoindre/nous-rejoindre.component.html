@@ -45,7 +45,7 @@
                     • Des avantages sociaux</p>
             </div>
         </div>
-        <button>Rejoignez-nous</button>
+        <button (click)="scrollToElementRejoindre(condidature)">Rejoignez-nous</button>
     </section>
     <section class="third-section">
         <h1>Comment rejoindre nos équipes ? </h1>
@@ -95,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section class="fourth-section">
+    <!-- <section class="fourth-section">
         <h1>Des profils que nous recherchons</h1>
         <div>
             <div>
@@ -130,8 +130,8 @@
             </div>
         </div>
         <button>Toutes nos opportunités d'emploi</button>
-    </section>
-    <section class="fifth-section">
+    </section> -->
+    <section class="fifth-section" #condidature>
         <h1>CANDIDATURE SPONTANÉE</h1>
         <p>Presco Consulting recherche de nouveaux et différents talents sur différents métiers.<br>
             Si nous ne trouvez pas d’offres correspondant à votre profil, n’hésitez pas à candidater de manière spontanée.</p>

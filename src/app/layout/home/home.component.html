@@ -8,7 +8,7 @@
         Nous créerons un plan personnalisé correspondant à vos besoins et sommes
         certains de vous offrir le succès que vous désirez.
       </p>
-      <button>En savoir plus</button>
+      <button routerLink="../nos-services">En savoir plus</button>
     </div>
     <div class="hero__section-illustration">
       <svg
@@ -3378,7 +3378,12 @@
     <h1>Nos services à la une</h1>
     <div class="trainings">
       <h2>Formations</h2>
-      <div class="trainings-container">
+
+      <div style="display: flex;justify-content: center;
+        flex-wrap: wrap;  height: fit-content;">
+          <app-cours *ngFor = "let cours of courses"  [cours] ="cours"></app-cours>
+        </div>
+      <!-- <div class="trainings-container">
         <div class="training">
           <h2>Les méthodes agiles</h2>
           <div>
@@ -3509,12 +3514,38 @@
           </div>
           <a>Découvrir la formation <img src="assets/Arrow.svg" alt="" /></a>
         </div>
-      </div>
-      <button>TOUTES NOS FORMATIONS</button>
+      </div> -->
+      <button routerLink="../nos-services/formations">TOUTES NOS FORMATIONS</button>
     </div>
     <div class="projects">
       <h2>Projects</h2>
       <div class="projects-container">
+        <div class="project">
+          <h2>DÉVELOPPEMENT LOGICIEL</h2>
+          <p>
+            Nous vous accompagnons tout le long de votre projet de logiciel afin
+            de répondre au mieux aux besoins de votre entreprise et d’en
+            garantir le succès. Nos experts en développement, chefs de projets,
+            architectes vous conseillent dans le choix des technologies et de la
+            méthodologie à suivre.
+          </p>
+          <a routerLink="../nos-services/developpement-ui-ux"
+            ><span>En savoir plus</span> <img src="assets/Arrow.svg" class="svp" alt=""
+          /></a>
+        </div>
+        <div class="project">
+          <h2>Conseil en stratégie informatique</h2>
+          <p>
+            Nous vous aide à créer de la valeur par votre informatique et à
+            maximiser votre développement en analysant le potentiel de
+            croissance et la capacité de réduction des coûts induits par votre
+            système d’information. D’où, une meilleure satisfaction de vos
+            clients🚀✨
+          </p>
+          <a  routerLink="../nos-services/transformation-digitale"
+            ><span>En savoir plus</span><img  class="svp" src="assets/Arrow.svg" alt=""
+          /></a>
+        </div>
         <div class="project">
           <h2>Digital Marketing</h2>
           <p>
@@ -3530,34 +3561,9 @@
             ><span>En savoir plus</span> <img class="svp" src="assets/Arrow.svg" alt=""
           /></a>
         </div>
-        <div class="project">
-          <h2>DÉVELOPPEMENT LOGICIEL</h2>
-          <p>
-            Nous vous accompagnons tout le long de votre projet de logiciel afin
-            de répondre au mieux aux besoins de votre entreprise et d’en
-            garantir le succès. Nos experts en développement, chefs de projets,
-            architectes vous conseillent dans le choix des technologies et de la
-            méthodologie à suivre.
-          </p>
-          <a
-            ><span>En savoir plus</span> <img src="assets/Arrow.svg" class="svp" alt=""
-          /></a>
-        </div>
-        <div class="project">
-          <h2>Conseil en stratégie informatique</h2>
-          <p>
-            Nous vous aide à créer de la valeur par votre informatique et à
-            maximiser votre développement en analysant le potentiel de
-            croissance et la capacité de réduction des coûts induits par votre
-            système d’information. D’où, une meilleure satisfaction de vos
-            clients🚀✨
-          </p>
-          <a
-            ><span>En savoir plus</span><img  class="svp" src="assets/Arrow.svg" alt=""
-          /></a>
-        </div>
+        
       </div>
-      <button>TOUS NOS PROJETS</button>
+      <button routerLink="../nos-services">TOUS NOS PROJETS</button>
     </div>
   </section>
   <!-- <section class="partners__section"> 

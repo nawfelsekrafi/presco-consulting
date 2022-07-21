@@ -52,6 +52,41 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
+.forth-section-divs h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.forth-section-divs{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 140px;
+}
+
+.forth-section-divs div {
+  background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
+    padding: 30px;
+    margin-right:11px;
+    width: 30%;
+    color: white;
+    border-radius: 37px;
+}
+.forth-section-divs div:last-child{
+  margin-right:0px;
+}
+
+
+.forth-section-divs div > p {
+  text-align: left;
+}
+
+.forth-section-divs div:nth-child(2){
+  background: linear-gradient(#1b89ca, #2e3792);
+}
+
 .description > h1 {
   color: var(--primary-blue);
   animation: go-up 1s cubic-bezier(0.05, 0.36, 0.7, 1.21);
@@ -87,15 +122,20 @@ h1,
   font-family: "Montserrat", sans-serif;
 }
 
-h1 > span {
+h1 > span, h3>span {
   color: var(--primary-purple);
 }
 
 .last-section > h2 {
   color: var(--primary-blue);
 }
+.forth-section {
+  margin-top: 50px;
+  text-align: center;
+}
 
-.second-section h3 {
+
+.second-section h3 , .forth-section h3 {
   text-transform: uppercase;
   font-size: 25px;
   margin: 0;
@@ -103,9 +143,11 @@ h1 > span {
   font-family: "Montserrat", sans-serif;
   color: var(--primary-blue);
 }
-.second-section h3 span {
-  color: var(--primary-purple);
+
+.forth-section h3  {
+  margin-bottom: 30px;;
 }
+
 .second-section {
   text-align: center;
   margin: 0px 140px;

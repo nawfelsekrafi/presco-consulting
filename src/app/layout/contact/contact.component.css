@@ -182,7 +182,7 @@ a {
 }
 .contact-box > h1 {
   color: white;
-  padding: 42px;
+  padding: 0px 42px;
 }
 .contact-box > div > p {
   color: white;
@@ -262,7 +262,9 @@ a {
     height: 36px;
     font-size: 16px;
   }
-
+  .contact-box > h1{
+    padding: 42px;
+  }
   .third-section > div {
     width: 90%;
     flex-direction: column;

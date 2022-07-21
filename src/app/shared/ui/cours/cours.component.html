@@ -1,1 +1,23 @@
-<p>cours works!</p>
+<div class="container" >
+    <h4>{{cours?.nom}}</h4>
+    <div *ngIf="cours.certifiant" class="certifiant">
+        Certifiant
+    </div>
+    <div>
+        <h5>{{cours.domain +' / ' + cours.sousdomain}}</h5>
+       
+        <div class="cours-footer">
+            <div>
+                <h6>
+                    Durée :
+                </h6>
+                <p>{{cours.duree}}</p>
+            </div>
+            <div>
+                <h6>Prochaine session :</h6>
+                <p>20/06/2022</p>
+            </div>
+        </div>
+    </div>
+
+</div>

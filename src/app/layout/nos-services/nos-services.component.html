@@ -3,8 +3,8 @@
         <div class="description">
             <h1><span>Nos offres </span>de services</h1>
             <p>Des services sur mesure pour vous accompagner sur vos problématiques clés.<br></p>
-            <!-- (click)="scrollToElement(second)"  -->
-            <svg 
+            
+            <svg  (click)="scrollToElement(second)"  
             
             xmlns="http://www.w3.org/2000/svg" width="23.174" height="14.31" viewBox="0 0 23.174 14.31">
                 <path id="ic_expand_more_24px" d="M26.451,8.59l-8.864,8.845L8.723,8.59,6,11.313,17.587,22.9,29.174,11.313Z" transform="translate(-6 -8.59)" fill="#245fab"/>
@@ -45,7 +45,7 @@
             <img id="dev-svg" src="assets/Développement.svg" alt="">
         </div>
     </section>
-    <section class="blue">
+    <!-- <section class="blue">
         <div class="img-blue">
             <img id="ia-svg" src="assets/Data Science & AI.svg" alt="">
         </div>
@@ -56,11 +56,11 @@
                 sujets stratégiques et mettre en place des outils innovants d'aide à la décision.</p>
                 <button id="send-btn-blue" routerLink="ia-ds">Découvrir</button>
         </div>
-    </section>
+    </section> -->
     <section class="last-section">
         <h2>Un projet, un besoin ou une question ?</h2>
         <p>Vous avez un projet et vous ne savez pas comment le mettre en oeuvre ? Vous avez besoin de l'une de nos expertises pour <br>renforcer vos équipes ? Ou une simple question ? Contactez-nous !</p>
-        <a id="send-btn" href="mailto:contact@prescoconsulting.com">
+        <a id="send-btn" routerLink="../contactez-nous" >
             Contactez-nous</a>
     </section>
 </div>

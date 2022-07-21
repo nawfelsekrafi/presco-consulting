@@ -270,14 +270,14 @@ input:focus {
 
 .project > a > span {
   transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
   margin-right: 8px;
-  visibility: hidden;
+  opacity: 0;
 }
 .project:hover > a > span {
-  visibility: visible;
+  opacity: 1;
 }
 
 .project:hover > h2,
@@ -286,12 +286,14 @@ input:focus {
   color: #fff;
 }
 .svp {
-  visibility: hidden;
-  transition: visibility 0.3s;
+  opacity: 0;
+  transition: opacity 0.5s;
+  cursor: pointer;
 }
 
+
 .project:hover .svp {
-  visibility: visible;
+  opacity: 1;
 }
 
 .project {
@@ -301,6 +303,7 @@ input:focus {
 .project > a {
   position: absolute;
   right: 40px;
+  cursor: pointer;
 }
 
 .contact__section {

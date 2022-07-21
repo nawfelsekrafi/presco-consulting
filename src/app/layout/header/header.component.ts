@@ -14,12 +14,18 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     let menuIcon = document.getElementById('list-icon');
     let menu = <HTMLElement>document.querySelector('.menu');
+    
+      
+    
+   
     menuIcon!.onclick = function(){
       menu!.classList.toggle("show");
     }
     menu!.onclick = function(){
       menu!.classList.toggle("show");
     }
+    
+   
   }
 
 }

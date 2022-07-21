@@ -41,6 +41,9 @@
   font-size: 17;
   font-weight: 300;
 }
+p{
+  font-weight: 300;
+}
 
 .first-section > div > svg {
   cursor: pointer;
@@ -320,12 +323,27 @@ h1 > span,
     margin:19px 0px;
     width: 107%;
   }
+  .purple{
+    padding: 10px 10px 40px 10px;
+  }
+  .blue{
+    padding: 10px 10px 60px 10px;
+  }
 }
 @media only screen and (max-width: 353px) {
   .purple{
-    padding: 30px 30px 50px 30px;
+    padding: 10px 10px 75px 10px;
   }
   .blue{
-    padding: 30px 30px 230px 30px;
+    padding: 10px 10px 120px 10px;
+  }
+}
+
+@media only screen and (max-width: 288px) {
+  .blue{
+    padding: 10px 10px 180px 10px;
+  }
+  .purple{
+    padding: 10px 10px 120px 10px;
   }
 }

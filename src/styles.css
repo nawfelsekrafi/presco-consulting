@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap");
 
 :root {
-    --black-text: #333333;
-    --primary-purple:  #b6277b;
-    --primary-blue: #245fab;
+  --black-text: #333333;
+  --primary-purple: #b6277b;
+  --primary-blue: #245fab;
 }
 
 body {
-    color: var(--black-text);
-    padding: 0px;
-    margin: 0px;
-    position: relative;
-    overflow-x: hidden;
+  color: var(--black-text);
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 25px;
-    font-weight: 200;
-    font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 25px;
+  font-weight: 200;
+  font-size: 18px;
 }
 .contact-icon {
   margin-right: 13px;
@@ -35,54 +35,62 @@ p {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
-    background: #e9ddeb;
-    border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#1B89CA, #2E3792);
-    border-radius: 10px;
-  }
+  width: 12px;
+  background: #e9ddeb;
+  border-radius: 10px;
+}
 
-  @media only screen and (max-width: 1240px) {
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#1b89ca, #2e3792);
+  border-radius: 10px;
+}
 
-  }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@media only screen and (max-width: 1240px) {
+}
+
+.mat-elevation-z4 {
+  box-shadow: unset;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 @keyframes from-left {
-    0% {
-      transform: translateX(4rem);
-    }
-  
-    100% {
-      transform: translateX(0);
-    }
+  0% {
+    transform: translateX(4rem);
   }
+
+  100% {
+    transform: translateX(0);
+  }
+}
 @keyframes from-right {
-    0% {
-      transform: translateX(-4rem);
-    }
-  
-    100% {
-      transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-4rem);
   }
-  
-  @keyframes go-up {
-    0% {
-      transform: translateY(2rem);
-      opacity: 0;
-    }
-  
-    50%{
-      opacity: 0.5;
-    }
-  
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+
+  100% {
+    transform: translateX(0);
   }
-  
+}
+
+@keyframes go-up {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

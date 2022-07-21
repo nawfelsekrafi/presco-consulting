@@ -6,11 +6,14 @@ import { FormationsComponent } from './formations/formations.component';
 import { TransformationDigitaleComponent } from './transformation-digitale/transformation-digitale.component';
 import { IaComponent } from './ia/ia.component';
 import { UxDeveloppementComponent } from './ux-developpement/ux-developpement.component';
+import { FormationComponent } from './formation/formation.component';
+import { UiModule } from 'src/app/shared/ui/ui.module';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 const routes = [
  {path: '',  component: NosServicesComponent},
- {path: 'ia-ds',  component: IaComponent},
+//  {path: 'ia-ds',  component: IaComponent},
  {path: 'developpement-ui-ux',  component: UxDeveloppementComponent},
  {path: 'formations',  component: FormationsComponent},
  {path: 'transformation-digitale',  component: TransformationDigitaleComponent},
@@ -22,11 +25,14 @@ const routes = [
     TransformationDigitaleComponent,
     IaComponent,
     UxDeveloppementComponent,
-    NosServicesComponent
+    NosServicesComponent,
+    FormationComponent
   ],
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
+    MatTabsModule,
+    UiModule
   ]
 })
 export class NosServicesModule { }

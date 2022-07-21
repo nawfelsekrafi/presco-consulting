@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
-import { HomeComponent } from './layout/home/home.component';
 import { FaqComponent } from './layout/faq/faq.component';
 import { ContactComponent } from './layout/contact/contact.component';
 import { NousRejoindreComponent } from './layout/nous-rejoindre/nous-rejoindre.component';
@@ -18,7 +17,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
     FaqComponent,
     ContactComponent,
     NousRejoindreComponent,
@@ -28,7 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     MatDialogModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

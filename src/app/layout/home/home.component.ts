@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { courses } from 'src/app/shared/fake-db/fake-db';
+import { Cours } from 'src/app/shared/models/cours';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +9,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor(public router: Router) { }
+  courses :any ;
+  constructor(public router: Router) {
+    
+   }
 
   ngOnInit(): void {
+    this.courses = courses.slice(0 ,4);
   }
 
 }

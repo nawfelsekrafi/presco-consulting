@@ -411,10 +411,12 @@ h1 > span {
     font-weight: 700;
     color: var(--primary-blue);
   }
+ 
 
   .trainings {
-    margin-top: 40px;
+    /* margin: 40px 140px 40px 140px; */
     text-align: center;
+
   }
   
   .trainings-container {

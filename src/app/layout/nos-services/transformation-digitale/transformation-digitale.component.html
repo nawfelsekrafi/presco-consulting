@@ -19,8 +19,8 @@
         dans leur transformation digitale ou dans leur stratégie direct to
         customer.<br />
       </p>
-      <!-- (click)="scrollToElement(second)"  -->
-      <svg
+     
+      <svg  (click)="scrollToElement(second)" 
         xmlns="http://www.w3.org/2000/svg"
         width="23.174"
         height="14.31"
@@ -36,7 +36,7 @@
     </div>
   </section>
 
-  <section class="second-section">
+  <section class="second-section"  #second>
     <h3>Les points clés DE la <span>digitalisation</span></h3>
     <p>
       Élaboration de sites et d’applications mobiles, digitalisation des
@@ -153,7 +153,57 @@
   </section>
 
   <section class="forth-section">
-    <h3><span></span></h3>
+    <h3><span>Notre méthode de travail</span> en Digitalisation en 3 étapes</h3>
+    <div class="forth-section-divs">
+      <div>
+        <img src="assets/noun-analyzes-3075752.svg" alt="">
+        <h4>Analyser les <br> besoins</h4>
+        <p> L'analyse des besoins technologique est une étape cruciale, car elle permet  de circonscrire l'ampleur du projet. <br>Durant celle-ci, nous évaluons différents aspects de votre entreprise afin de définir les grandes lignes de votre plan stratégique TI : <br><br>
+
+          - Diagnostic détaillé des solutions et <br>des procédures en place dans <br>l'entreprise par une approche 360° <br>couvrant tant les aspects fonctionnels, organisationnels, <br>opérationnels, techniques et humains .<br><br>
+          
+          - Réaliser une analyse fonctionnelle préprojet .<br><br>
+          
+          - Dégager les améliorations possibles <br>qui augmenteront la compétitivité de <br>l’entreprise en optimisant les processus <br>d'affaires .<br><br>
+          
+          - élaborer un plan stratégique TI <br>efficace et réaliste. </p>
+      </div>
+      <div>
+        <img src="assets/Path 2414.svg" alt="">
+        <h4>
+          Sélectionner <br>l’outil
+        </h4>
+        <p>
+          Notre leitmotiv dans chaque dossier : 
+<br><br>
+- Trouver l'outil offrant le meilleur rapport fonctionnalités-prix ;
+<br><br>
+- Trouver le bon expert en implantation dont les méthodes de travail seront complémentaires à celles de notre client .
+<br><br>
+- S’assurer de l’acceptation du projet par l’ensemble des employés, en mettant en place un comité de pilotage représentatif et décisionnaire.
+<br><br>
+Notre objectif est de s’assurer que le choix final sera le meilleur afin de maximiser les chances de succès du projet, mais surtout de maximiser la création de valeur pour nos clients. 
+<br><br>
+        </p>
+      </div>
+      <div>
+        <img src="assets/noun-team-work-4795426.svg" alt="">
+        <h4>Accompagner la <br>mise en oeuvre</h4>
+        <p>
+          Nous vous accompagnons dans la mise en œuvre des solutions préconisées : 
+          <br><br>
+- En préparant vos équipes au changement organisationnel ;
+<br><br>
+- En aidant vos équipes à adopter les nouveaux outils et nouvelles procédures ;
+<br><br>
+- En accompagnant les entreprises dans la gestion du projet à différents plans ;
+<br><br>
+- à travers le coaching.
+<br><br>
+À la fin du projet, un post mortem est réalisé. C’est le moment ou nous prenons le temps de comprendre les étapes qui se sont moins bien déroulées et de prendre acte des erreurs à ne plus reproduire. Il permet de construire une mémoire stratégique pour l'entreprise dans le domaine de la transformation numérique.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section class="last-section" #second>
@@ -163,7 +213,7 @@
       Vous avez besoin de l'une de nos expertises pour <br />renforcer vos
       équipes ? Ou une simple question ? Contactez-nous !
     </p>
-    <a id="send-btn-blue" href="mailto:contact@prescoconsulting.com">
+    <a id="send-btn-blue"  routerLink="../../contactez-nous">
       Contactez-nous</a
     >
   </section>

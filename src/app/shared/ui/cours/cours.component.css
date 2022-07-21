@@ -1,0 +1,105 @@
+.container {
+    background:rgba(182, 39, 123, 10%) ;
+    color: #B6277B;
+    width: 375px;
+    height: 212px;
+    border-radius: 70px;
+    padding: 42px 49px;
+    background-blend-mode: color;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px 15px;
+    cursor: pointer;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+.certifiant {
+    background-color: #B6277B;
+    color: white;
+    padding: 2px 17px;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.cours-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cours-footer h6 {
+    margin-bottom: 0px;
+}
+.cours-footer p {
+    margin-top: 3px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
+@media only screen and (max-width: 506px) {
+    .container{
+        width: 66vw;
+        margin: 15px 0px;
+    }
+}
+@media only screen and (max-width: 327px) {
+    .container{
+        padding: 22px 29px;
+        border-radius: 50px;
+        width: 66vw;
+        margin: 15px 0px;
+    }
+
+    h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 0px;
+    }
+    
+    .certifiant {
+        background-color: #B6277B;
+        color: white;
+        padding: 2px 15px;
+        width: fit-content;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    
+    h5 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        margin: 0px;
+    }
+    
+    .cours-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cours-footer h6 {
+        margin-bottom: 0px;
+    }
+    .cours-footer p {
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
