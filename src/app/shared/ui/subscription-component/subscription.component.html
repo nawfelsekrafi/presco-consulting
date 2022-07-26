@@ -1,13 +1,13 @@
-<div>
-  <div>
+<div class="container">
+  <div class="sub-header">
     <p (click)="page = 'inter'">INTER</p>
     <p (click)="page = 'intra'">INTRA</p>
     <p (click)="page = 'sur-mesure'">SUR MESURE</p>
   </div>
-  <div *ngIf="page == 'inter'">
-    <div>Session partagée avec d'autres organisations</div>
+  <div *ngIf="page == 'inter'" class="inter">
+    <div class="inter-div-1">Session partagée avec d'autres organisations</div>
     <div>
-      <h1>Prochaine Sessions</h1>
+      <h1 class="p-s">Prochaine Sessions</h1>
       <div class="session">
         <div><span class="date">Du 23 au 24/06/2022 </span>
            <span calss="type">En distanciel</span> </div>
@@ -25,10 +25,10 @@
       </div>      
     </div>
     <div class="buttons">
-        <button class="blue-fill">Demandez un devis</button>
-        <button id="send-blue-btn" >Contactez-nous</button>
+        <button id="blue-fill">Demandez un devis</button>
+        <button id="send-btn-blue" >Contactez-nous</button>
     </div>
-    <a href="">Telecharger le programme</a>
+    <a class="link" href="">Telecharger le programme</a>
   </div>
   <div *ngIf="page == 'intera'"></div>
   <div *ngIf="page == 'sur-mesure'"></div>
