@@ -93,11 +93,12 @@ p {
 .mission > div {
   border-right: 3px solid var(--primary-purple);
   border-bottom: 3px solid var(--primary-purple);
-  text-align: end;
+  text-align: start;
   padding: 0px 10px 10px 0px;
 }
 .mission > div > h1 {
   color: var(--primary-purple);
+  text-align: end !important;
 }
 
 .mission > img {
