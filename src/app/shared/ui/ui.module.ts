@@ -15,6 +15,7 @@ import { SubscriptionComponent } from './subscription-component/subscription.com
   ],
   exports: [
     CoursComponent,
+    SubscriptionComponent
   ]
 })
 export class UiModule { }

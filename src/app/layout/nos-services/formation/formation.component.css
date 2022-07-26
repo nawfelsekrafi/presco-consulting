@@ -1,0 +1,105 @@
+.sub-title {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--primary-blue);
+    text-transform: uppercase;   
+    padding: 30px 130px;
+}
+.description {
+    padding: 30px 130px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: var(--primary-blue);
+}
+.details {
+    padding: 0px 140px 30px 140px;
+}
+.details > h1 {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.details  h2 {
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--primary-purple);
+    text-transform: uppercase;
+}
+.public-cible div {
+    display: flex;
+}
+
+.details p {
+    font-weight: 300;
+}
+
+.public-cible div > img {
+    width: 65px;
+    margin-right: 10px;
+}
+
+.programme-section {
+    background-color:rgba(36, 95, 171, 20%) ;
+    padding: 30px 140px;
+}
+.cover {
+    width: 100%;
+}
+.header {
+    display: flex;
+}
+.header > h2 {
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+}
+.header > img {
+    margin-right: 40px;
+    width: 70px;
+}
+.programme-section h4 {
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+}
+.contact{
+    text-align: center;
+    margin: 30px auto;
+}
+.contact > h2 {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: var(--primary-blue);
+}
+
+#send-btn {
+  border: 1px solid var(--primary-purple);
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: var(--primary-purple);
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  animation: go-up 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
+}
+
+#send-btn:hover {
+  color: #fff;
+  background-color: var(--primary-purple);
+  box-shadow: 0px 15px 20px #d67eb1;
+  transform: translateY(-4px);
+}

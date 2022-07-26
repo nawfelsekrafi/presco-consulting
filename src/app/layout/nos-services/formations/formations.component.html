@@ -1,206 +1,60 @@
 <div class="nos-services__container">
-    <section class="first-section">
-        <img src="assets/Nos Formations.svg" alt="" class="first-section_illustraion">
-        <div class="description">
-            <h1><span>Nos </span>Formations</h1>
-            <p>Nous proposons et inspirons les compétences qui comptent pour demain.
-                Toutes nos formations sont assurées par des consultants-formateurs expérimentés et reconnus par leurs pairs.
-                <br>
-                Se former chez Presco Consulting, c'est rencontrer un expert qui pratique au quotidien les gestes et les concepts que vous êtes venu·e apprendre.<br></p>
-            
-            <svg (click)="scrollToElement(second)" 
-            
-            xmlns="http://www.w3.org/2000/svg" width="23.174" height="14.31" viewBox="0 0 23.174 14.31">
-                <path id="ic_expand_more_24px" d="M26.451,8.59l-8.864,8.845L8.723,8.59,6,11.313,17.587,22.9,29.174,11.313Z" transform="translate(-6 -8.59)" fill="#245fab"/>
-              </svg>
-        </div>
-    </section>
-    <section class="fourth-section" #second>
-        <h1>Nos domaines de formation</h1>
-        <div>
-            <div>
-            <div>
-                <p>Programmation &  Développement</p>
-            </div>
-            
-            <div>
-                <p>Management  & Soft skills</p>
-                
-                
-            </div>
-        </div>
-        <div>
-            <div>
-                <p>Bureautique</p>
-            </div>
-            <div>
-               
-                <p>Web & Mobile</p>
-               
-            </div>
-            <div>
-              
-                <p>Design Thinking</p>
-              
-            </div>
-           
-            
-            
-        </div>
-        <div>
-            <div>
-                
-                <p>Maitriser l'Agilité</p>
-                
-            </div>
-            <div>
-              
-                <p>Design / UX / UI</p>
-              
-            </div>
-           
-        </div>
-        </div>
-    </section>
-    <div class="trainings">
-        <h2> Top Formations</h2>
+  <section class="first-section">
+    <img src="assets/Nos Formations.svg" alt="" class="first-section_illustraion">
+    <div class="description">
+      <h1><span>Nos </span>Formations</h1>
+      <p>Nous proposons et inspirons les compétences qui comptent pour demain.
+        Toutes nos formations sont assurées par des consultants-formateurs expérimentés et reconnus par leurs pairs.
+        <br>
+        Se former chez Presco Consulting, c'est rencontrer un expert qui pratique au quotidien les gestes et les
+        concepts que vous êtes venu·e apprendre.<br>
+      </p>
 
-        <div style="display: flex;justify-content: center;
-        flex-wrap: wrap;  height: fit-content; ">
-          <app-cours routerLink="formation/:cours.id"  *ngFor = "let cours of courses"  [cours] ="cours"></app-cours>
+      <svg (click)="scrollToElement(second)" xmlns="http://www.w3.org/2000/svg" width="23.174" height="14.31"
+        viewBox="0 0 23.174 14.31">
+        <path id="ic_expand_more_24px" d="M26.451,8.59l-8.864,8.845L8.723,8.59,6,11.313,17.587,22.9,29.174,11.313Z"
+          transform="translate(-6 -8.59)" fill="#245fab" />
+      </svg>
+    </div>
+  </section>
+  <section class="fourth-section" #second>
+    <h1>Nos domaines de formation</h1>
+    <div>
+      <div>
+        <div>
+          <p>Programmation & Développement</p>
         </div>
-        <!-- <div class="trainings-container">
-          <div class="training">
-            <h2>Les méthodes agiles</h2>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30.018"
-                height="30.018"
-                viewBox="0 0 30.018 30.018"
-              >
-                <path
-                  id="Time_Icon"
-                  data-name="Time Icon"
-                  d="M16.994,2A15.009,15.009,0,1,0,32.018,17.009,15,15,0,0,0,16.994,2Zm.015,27.016A12.007,12.007,0,1,1,29.016,17.009,12,12,0,0,1,17.009,29.016ZM17.76,9.5H15.508V18.51l7.88,4.728,1.126-1.846L17.76,17.384Z"
-                  transform="translate(-2 -2)"
-                  fill="#b6277b"
-                />
-              </svg>
-              <span> 5 JOURS</span>
-            </div>
-            <a>Découvrir la formation <img src="assets/Arrow.svg" alt="" /></a>
-          </div>
-          <div class="training">
-            <h2>CMS WORDPRESS</h2>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30.018"
-                height="30.018"
-                viewBox="0 0 30.018 30.018"
-              >
-                <path
-                  id="Time_Icon"
-                  data-name="Time Icon"
-                  d="M16.994,2A15.009,15.009,0,1,0,32.018,17.009,15,15,0,0,0,16.994,2Zm.015,27.016A12.007,12.007,0,1,1,29.016,17.009,12,12,0,0,1,17.009,29.016ZM17.76,9.5H15.508V18.51l7.88,4.728,1.126-1.846L17.76,17.384Z"
-                  transform="translate(-2 -2)"
-                  fill="#b6277b"
-                />
-              </svg>
-              <span> 5 JOURS</span>
-            </div>
-            <a
-              >Découvrir la formation <img src="assets/Arrow.svg" alt=""
-            /></a>
-          </div>
-          <div class="training">
-            <h2>INTÉGRATION HTML5/CSS3</h2>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30.018"
-                height="30.018"
-                viewBox="0 0 30.018 30.018"
-              >
-                <path
-                  id="Time_Icon"
-                  data-name="Time Icon"
-                  d="M16.994,2A15.009,15.009,0,1,0,32.018,17.009,15,15,0,0,0,16.994,2Zm.015,27.016A12.007,12.007,0,1,1,29.016,17.009,12,12,0,0,1,17.009,29.016ZM17.76,9.5H15.508V18.51l7.88,4.728,1.126-1.846L17.76,17.384Z"
-                  transform="translate(-2 -2)"
-                  fill="#b6277b"
-                />
-              </svg>
-              <span> 5 JOURS</span>
-            </div>
-            <a>Découvrir la formation <img src="assets/Arrow.svg" alt="" /></a>
-          </div>
-          <div class="training">
-            <h2>CMS PRESTASHOP</h2>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30.018"
-                height="30.018"
-                viewBox="0 0 30.018 30.018"
-              >
-                <path
-                  id="Time_Icon"
-                  data-name="Time Icon"
-                  d="M16.994,2A15.009,15.009,0,1,0,32.018,17.009,15,15,0,0,0,16.994,2Zm.015,27.016A12.007,12.007,0,1,1,29.016,17.009,12,12,0,0,1,17.009,29.016ZM17.76,9.5H15.508V18.51l7.88,4.728,1.126-1.846L17.76,17.384Z"
-                  transform="translate(-2 -2)"
-                  fill="#b6277b"
-                />
-              </svg>
-              <span> 5 JOURS</span>
-            </div>
-            <a>Découvrir la formation <img src="assets/Arrow.svg" alt="" /></a>
-          </div>
-          <div class="training">
-            <h2>LEADERSHIP</h2>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30.018"
-                height="30.018"
-                viewBox="0 0 30.018 30.018"
-              >
-                <path
-                  id="Time_Icon"
-                  data-name="Time Icon"
-                  d="M16.994,2A15.009,15.009,0,1,0,32.018,17.009,15,15,0,0,0,16.994,2Zm.015,27.016A12.007,12.007,0,1,1,29.016,17.009,12,12,0,0,1,17.009,29.016ZM17.76,9.5H15.508V18.51l7.88,4.728,1.126-1.846L17.76,17.384Z"
-                  transform="translate(-2 -2)"
-                  fill="#b6277b"
-                />
-              </svg>
-              <span> 5 JOURS</span>
-            </div>
-            <a
-              >Découvrir la formation <img src="assets/Arrow.svg" alt=""
-            /></a>
-          </div>
-          <div class="training">
-            <h2>RELATION CLIENT</h2>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30.018"
-                height="30.018"
-                viewBox="0 0 30.018 30.018"
-              >
-                <path
-                  id="Time_Icon"
-                  data-name="Time Icon"
-                  d="M16.994,2A15.009,15.009,0,1,0,32.018,17.009,15,15,0,0,0,16.994,2Zm.015,27.016A12.007,12.007,0,1,1,29.016,17.009,12,12,0,0,1,17.009,29.016ZM17.76,9.5H15.508V18.51l7.88,4.728,1.126-1.846L17.76,17.384Z"
-                  transform="translate(-2 -2)"
-                  fill="#b6277b"
-                />
-              </svg>
-              <span> 5 JOURS</span>
-            </div>
-            <a>Découvrir la formation <img src="assets/Arrow.svg" alt="" /></a>
-          </div>
-        </div> -->
-        <button>Afficher plus de formations</button>
+        <div>
+          <p>Management & Soft skills</p>
+        </div>
       </div>
+      <div>
+        <div>
+          <p>Bureautique</p>
+        </div>
+        <div>
+          <p>Web & Mobile</p>
+        </div>
+        <div>
+          <p>Design Thinking</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <p>Maitriser l'Agilité</p>
+        </div>
+        <div>
+          <p>Design / UX / UI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="trainings">
+    <h2>Top Formations</h2>
+    <div style="display: flex;justify-content: center;
+        flex-wrap: wrap;  height: fit-content; ">
+      <app-cours [routerLink]="['formation/',cours.id]" *ngFor="let cours of courses" [cours]="cours"></app-cours>
+    </div>
+    <button>Afficher plus de formations</button>
+  </div>
 </div>

@@ -16,6 +16,7 @@ const routes = [
 //  {path: 'ia-ds',  component: IaComponent},
  {path: 'developpement-ui-ux',  component: UxDeveloppementComponent},
  {path: 'formations',  component: FormationsComponent},
+ {path: 'formations/formation/:id',  component: FormationComponent},
  {path: 'transformation-digitale',  component: TransformationDigitaleComponent},
  
 ]
