@@ -20,27 +20,27 @@ h3 > span {
   color: var(--primary-purple);
 }
 
-.last-section{
+.last-section {
   margin-top: 90px;
 }
 .last-section > div {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 45% 10% 45%;
-    padding: 0px 140px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 45% 10% 45%;
+  padding: 0px 140px;
 }
 .last-section h3 {
-    text-align: center;
+  text-align: center;
 }
 .last-section > div > div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .last-section > div > div:first-child {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 .last-section > div > div:last-child {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .first-section_illustraion {
@@ -76,8 +76,8 @@ h3 > span {
   text-align: center;
 }
 p {
-    font-size: 17;
-    font-weight: 300;
+  font-size: 17;
+  font-weight: 300;
 }
 
 .description > svg {
@@ -90,15 +90,15 @@ p {
 }
 
 h5 {
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 .h5-purple {
-    color: var(--primary-purple);
+  color: var(--primary-purple);
 }
 .h5-blue {
-    color: var(--primary-blue)
+  color: var(--primary-blue);
 }
 h1,
 .last-section > h2 {
@@ -134,67 +134,73 @@ mat-tab-group img {
   margin: 0 50px;
 }
 
-.tab-section, .tab-2-section {
+.tab-section,
+.tab-2-section {
   display: flex;
   justify-content: space-between;
-  padding: 100px 140px
+  padding: 100px 140px;
 }
 
-.tab-section div , .tab-2-section div{
+.tab-section div,
+.tab-2-section div {
   text-align: left;
 }
-.tab-section h2 , .tab-2-section h2 {
+.tab-section h2,
+.tab-2-section h2 {
   text-transform: uppercase;
   font-size: 30px;
   margin: 0;
   font-weight: 500;
 }
 
-.tab-section:first-child, .tab-2-section:first-child {
+.tab-section:first-child,
+.tab-2-section:first-child {
   background-repeat: no-repeat;
   background-image: url("../../../../assets/background-tab-1.svg");
   background-size: cover;
   background-position-y: -200px;
   background-repeat: no-repeat;
 }
-.tab-section:nth-child(3), .tab-2-section:nth-child(3) {
+.tab-section:nth-child(3),
+.tab-2-section:nth-child(3) {
   background-repeat: no-repeat;
   background-image: url("../../../../assets/background-tab-3.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.tab-section:nth-child(odd) h2{
+.tab-section:nth-child(odd) h2 {
   color: var(--primary-blue);
 }
-.tab-section:nth-child(even) h2{
+.tab-section:nth-child(even) h2 {
   color: var(--primary-purple);
 }
 
-.tab-2-section:nth-child(odd) h2{
+.tab-2-section:nth-child(odd) h2 {
   color: var(--primary-purple);
 }
-.tab-2-section:nth-child(even) h2{
+.tab-2-section:nth-child(even) h2 {
   color: var(--primary-blue);
 }
 
-.tab-contact-section, .tab-2-contact-section  {
+.tab-contact-section,
+.tab-2-contact-section {
   background-image: url("../../../../assets/Group 8668.svg");
   padding: 140px;
   background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: -82px;
-    background-attachment: fixed;
-    background-position-y: 118px;
+  background-repeat: no-repeat;
+  background-position-x: -82px;
+  background-attachment: fixed;
+  background-position-y: 118px;
 }
 
-.tab-contact-section  h2 {
+.tab-contact-section h2 {
   font-size: 35px;
   margin: 0;
   font-weight: 700;
   color: var(--primary-blue);
 }
-.tab-2-contact-section  h2 {
+.tab-2-contact-section h2 {
   font-size: 35px;
   margin: 0;
   font-weight: 700;
@@ -257,4 +263,64 @@ mat-tab-group img {
   border-radius: 30px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .tab-section div,
+  .tab-2-section div {
+    text-align: center;
+  }
+  .description > p {
+    display: none;
+  }
+  .tab-section,
+  .tab-2-section {
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+  .tab-contact-section,
+  .tab-2-contact-section {
+    margin: unset;
+    padding: unset;
+  }
+  .last-section > div {
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 888px) {
+  .last-section {
+    display: none;
+  }
+  #rectangle-1 {
+    bottom: 283px;
+    width: 216px;
+  }
+}
 
+@media only screen and (max-width: 691px) {
+  .first-section {
+    flex-direction: column;
+    margin: unset;
+  }
+  .first-section_illustraion {
+    width: 90%;
+  }
+  #rectangle-1 {
+    display: none;
+  }
+  .description > h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 619px) {
+  .tab-contact-section > div,
+  .tab-2-contact-section > div {
+    margin: unset;
+  }
+  mat-tab-group img {
+    margin: 0 50px;
+    width: 70%;
+  }
+
+  .tab-2-contact-section[_ngcontent-sxt-c73] h2[_ngcontent-sxt-c73] {
+    font-size: 1em;}
+}
