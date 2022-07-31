@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="255" height="255" viewBox="0 0 255 255">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b1317f"/>
+      <stop offset="0.166" stop-color="#9d2e78"/>
+      <stop offset="0.531" stop-color="#752969"/>
+      <stop offset="0.822" stop-color="#5d2560"/>
+      <stop offset="1" stop-color="#54245d"/>
+    </linearGradient>
+  </defs>
+  <g id="transparence-grp" transform="translate(-18.302 -70.563)">
+    <g id="Ellipse_158" data-name="Ellipse 158" transform="translate(18.302 70.563)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient)">
+      <circle cx="127.5" cy="127.5" r="127.5" stroke="none"/>
+      <circle cx="127.5" cy="127.5" r="127" fill="none"/>
+    </g>
+    <path id="Transparence" d="M220.1,140.137,196.722,122.6v8.767H183.446a39.438,39.438,0,1,0-65.53,0h-26.4v4.384h29.856A39.624,39.624,0,0,0,132.7,144.52H82.75V148.9h59.178v4.384h-4.384v8.767h-4.384v4.384h4.384v26.3a13.151,13.151,0,0,0,26.3,0v-26.3h4.384v-4.384h-4.384v-8.767h-4.384V148.9h37.26v8.767Zm-60.641,52.6a8.767,8.767,0,0,1-17.534,0v-26.3h17.534Zm-17.534-30.685v-4.384h17.534v4.384Zm13.151-8.767h-8.767V148.9h8.767ZM150.7,144.52A35.208,35.208,0,1,1,178,131.37H165.2a26.276,26.276,0,1,0-14.506,4.384h50.411V131.37l11.688,8.767L201.106,148.9V144.52Zm0-13.151a21.918,21.918,0,1,1,21.918-21.918A21.918,21.918,0,0,1,150.7,131.37Z" transform="translate(-5.568 60.236)" fill="#fff"/>
+  </g>
+</svg>

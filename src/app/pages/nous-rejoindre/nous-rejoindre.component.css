@@ -21,7 +21,7 @@ input[type="file"] {
 
 .first-section {
   background-attachment: fixed;
-  background-image: url("../../../assets/Waimakariri 01.svg");
+  background-image: url("../../../assets/Backgound.svg");
   background-position: -111px -233px;
   background-repeat: no-repeat;
   display: flex;
@@ -284,7 +284,7 @@ hr {
   flex-direction: column;
   align-items: center;
   background-attachment: fixed;
-  background-image: url("../../../assets/Waimakariri 01.svg");
+  background-image: url("../../../assets/Backgound.svg");
   background-position: -111px -233px;
   background-repeat: no-repeat;
   padding-bottom: 60px;
