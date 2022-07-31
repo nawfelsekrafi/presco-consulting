@@ -170,18 +170,18 @@ p {
 
 .first-row > div > div > img,
 .second-row > div > div > img {
-  width: 100%;
+  width: 60%;
 }
 .first-row > div > div {
   background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
   border-radius: 100%;
-  padding: 35px;
+  padding: 35px 18px 37px 18px;
   margin-top: 13px;
 }
 .second-row > div > div {
   background: linear-gradient(#1b89ca, #2e3792);
   border-radius: 100%;
-  padding: 35px;
+  padding: 39px 16px 37px 16px;
   margin-top: 13px;
 }
 .first-row h3 {

@@ -24,6 +24,7 @@ p {
   font-weight: 200;
   font-size: 18px;
 }
+
 .contact-icon {
   margin-right: 13px;
 }
@@ -60,6 +61,12 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+* {
+  box-sizing: content-box;
+}
+
+/* animations 😛*/
+
 @keyframes from-left {
   0% {
     transform: translateX(4rem);
@@ -69,6 +76,7 @@ body {
     transform: translateX(0);
   }
 }
+
 @keyframes from-right {
   0% {
     transform: translateX(-4rem);
