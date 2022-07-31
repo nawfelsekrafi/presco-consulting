@@ -13,6 +13,6 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     setTimeout(() => {
       this.wait= false;
-    }, 100);
+    }, 600);
   }
 }

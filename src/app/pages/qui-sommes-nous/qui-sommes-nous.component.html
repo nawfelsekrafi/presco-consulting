@@ -1,4 +1,8 @@
-<div class="qui-sommes-nous__container">
+
+<div class="loader" *ngIf="wait">
+    <img src="assets/Spinner.svg" alt="">
+</div> 
+<div class="qui-sommes-nous__container"  *ngIf="!wait">
     <section class="first-section">
         <div class="description">
             <p class="nous-sommes">Nous sommes
