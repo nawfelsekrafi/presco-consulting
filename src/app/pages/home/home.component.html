@@ -3381,7 +3381,7 @@
 
       <div style="display: flex;justify-content: center;
         flex-wrap: wrap;  height: fit-content;">
-          <app-cours *ngFor = "let cours of courses"  [cours] ="cours" [routerLink]="['nos-services/formations/formation/',cours.id]"></app-cours>
+          <app-cours *ngFor = "let cours of courses"  [cours] ="cours" [routerLink]="['../nos-services/formations/formation/',cours.id]"></app-cours>
         </div>
       <button routerLink="../nos-services/formations">TOUTES NOS FORMATIONS</button>
     </div>
