@@ -1,101 +1,183 @@
 <div class="rejoindre__container">
-    <section class="first-section">
+  <section class="first-section">
+    <div>
+      <h1><span>Rejoindre</span> Nos équipes</h1>
+      <p>
+        Tout comme nous, vous êtes un(e) passioné(e) et vous souhaitez nous
+        rejoindre ?
+      </p>
+      <p>C'est par ici !</p>
+      <svg
+        (click)="scrollToElement(second)"
+        xmlns="http://www.w3.org/2000/svg"
+        width="23.174"
+        height="14.31"
+        viewBox="0 0 23.174 14.31"
+      >
+        <path
+          id="ic_expand_more_24px"
+          d="M26.451,8.59l-8.864,8.845L8.723,8.59,6,11.313,17.587,22.9,29.174,11.313Z"
+          transform="translate(-6 -8.59)"
+          fill="#245fab"
+        />
+      </svg>
+    </div>
+    <img loading="eager" src="assets/Illustration REJOIGNEZ-NOUS.svg" alt="" />
+  </section>
+  <section class="second-section" #second>
+    <div>
+      <img loading="lazy" src="assets/Evolution.svg" alt="Evolution" />
+      <div>
+        <h1>évolution</h1>
+        <p>
+          Afin d'accompagner la croissance de l'entreprise et d'élever nos
+          ambitions à l'international, nous investissons dans la collectivité,
+          le développement, l'intégration de jeunes talents issus de la
+          diversité.<br /><br />
+          Proximité, encadrement, formation, promotion interne : tout pour vous
+          faire évoluer dans vos fonctions.<br /><br />
+          Que vous soyez débutant ou expérimenté, Presco Consulting est un
+          véritable tremplin pour démarrer ou donner de l'élan votre carrière.
+        </p>
+      </div>
+    </div>
+    <div>
+      <img loading="lazy" src="assets/Vie Interne 01.svg" alt="Vie Interne" />
+      <div>
+        <h1>VIE EN interne</h1>
+        <p>
+            Nous sommes
+            convaincus qu'une culture d'entreprise dynamique et un
+            bon environnement de travail permettent à nos
+            collaborateurs d'évoluer dans une ambiance de
+            travail agréable, et nous mettons tout en œuvre afin
+            que nos collaborateurs puissent s'épanouir pleinement au
+            sein de notre organisation.
+            <br><br>
+            • Nous favorisons une culture d'entreprise basée sur les
+            
+            valeurs et la proximité<br><br>
+            
+            • Nous œuvrons constamment à un environnement de
+            
+            travail confortable, convivial et dynamique<br><br>
+            
+            • Nous investissons fortement dans la vie de l'entreprise
+        </p>
+      </div>
+    </div>
+    <div>
+      <img src="assets/Experience.svg" loading="lazy" alt="Experience" />
+      <div>
+        <h1>L'EXPÉRIENCE</h1>
+        <p>
+            Notre politique sociale repose sur la motivation et la fidélisation de nos collaborateurs. Au-delà de nos
+            offres motivantes, nous mettons l'accent sur la reconnaissance, un management de proximité et la mise en
+            
+            place de divers programmes.<br><br>
+            
+            • Une évaluation juste de la performance<br><br>
+            
+            • Une structure de formation pour vous accompagner tout au long de votre parcours<br><br>
+            
+            • Des avantages sociaux
+        </p>
+      </div>
+    </div>
+    <button (click)="scrollToElementRejoindre(condidature)">
+      Rejoignez-nous
+    </button>
+  </section>
+  <section class="third-section">
+    <h1>Comment rejoindre nos équipes ?</h1>
+    <p>
+      Nous ne disposons pas de directeur des ressources humaines. De ce fait,
+      toutes les candidatures sont évaluées par vos futurs collègues.
+    </p>
+    <div>
+      <div>
+        <img src="assets/1.svg" alt="number 1" />
         <div>
-            <h1><span>Rejoindre</span>  Nos équipes</h1>
-            <p>Tout comme nous, vous êtes un(e) passioné(e) et vous souhaitez nous rejoindre ?
-            </p>
-            <p>
-                C'est par ici !</p>
-          <svg (click)="scrollToElement(second)"  xmlns="http://www.w3.org/2000/svg" width="23.174" height="14.31" viewBox="0 0 23.174 14.31">
-            <path id="ic_expand_more_24px" d="M26.451,8.59l-8.864,8.845L8.723,8.59,6,11.313,17.587,22.9,29.174,11.313Z" transform="translate(-6 -8.59)" fill="#245fab"/>
-          </svg>
+          <h2>NOUS EXAMINONS VOTRE CV</h2>
+          <p>
+            Notre équipe technique examine vos compétences et voit si vous
+            pouvez passer à l'étape suivante.
+          </p>
         </div>
-        <img loading="eager" src="assets/Illustration REJOIGNEZ-NOUS.svg" alt="">
-    </section>
-    <section class="second-section" #second>
+      </div>
+      <hr />
+      <div class="even">
+        <img src="assets/2.svg" alt="number 2" />
         <div>
-            <img loading="lazy" src="assets/Evolution.svg" alt="Evolution">
-            <div>
-                <h1>évolution</h1>
-                <p>Afin d'accompagner la croissance de l'entreprise et porter notre ambition au niveau international, nous investissons dans la collectivité, le développement, l’intégration, de jeunes talents, venant d’horizons différents.<br><br>
-                    Proximité, encadrement, formation, promotion interne : tout est mis en œuvre pour vous aider à grandir dans vos fonctions.<br><br>
-                    
-                    Que vous soyez débutant ou expérimenté, Presco Consulting est un véritable tremplin pour démarrer ou donner de l’élan à votre carrière.</p>
-            </div>
+          <h2>APPRENDRE À SE CONNAÎTRE</h2>
+          <p>
+            Par un appel vidéo ou une rencontre dans nos
+            locaux. Le but est de comprendre pourquoi vous avez
+            postulé, pourquoi nous vous avons invité, de vous
+            présenter Presco Consulting et comment nous
+            travaillons. Mieux encore, cela signifie comprendre
+            votre parcours, connaître votre projet et établir
+            
+            ensemble un plan de travail
+          </p>
         </div>
+      </div>
+      <hr />
+      <div>
+        <img src="assets/3.svg" alt="number 3" />
         <div>
-            <img loading="lazy" src="assets/Vie Interne 01.svg" alt="Vie Interne">
-            <div>
-                <h1>VIE EN interne</h1>
-                <p>Convaincus qu’une culture d’entreprise dynamique et un environnement de travail favorable contribuent à l’épanouissement de nos collaborateurs dans un climat de travail agréable, nous mettons tout en œuvre pour que nos collaborateurs puissent s’épanouir pleinement au sein de notre organisation.
-<br><br>
-                    • Nous favorisons une culture d’entreprise fondée sur un management par les valeurs et la proximité<br>
-                    • Nous œuvrons sans cesse à un environnement de travail confortable, convivial et dynamique<br>
-                    • Nous investissons fortement dans la vie d’entreprise</p>
-            </div>
+          <h2>ÉVALUATION TECHNIQUE</h2>
+          <p>
+            Vous rencontrez un de nos experts dans le domaine qui
+vous intéresse, ce qui est aussi l'occasion de vous aider à
+vous auto-évaluer et connaître votre niveau. Au cours
+de cette évaluation, nous comprenons à quel point vous
+êtes avancé techniquement. Vous partez après avoir
+potentiellement rencontré votre futur responsable
+technique et nous espérons que vous aurez appris
+
+quelques astuces.
+          </p>
         </div>
+      </div>
+      <hr />
+      <div class="even">
+        <img src="assets/4.svg" style="margin-right: 46px" alt="number 4" />
         <div>
-            <img src="assets/Experience.svg" loading="lazy" alt="Experience">
-            <div>
-                <h1>L'EXPÉRIENCE</h1>
-                <p>Notre politique sociale est basée sur la motivation et la fidélisation de nos collaborateurs. Au-delà de nos offres motivantes, nous mettons l'accent sur la reconnaissance, un management de proximité et la mise en place de divers programmes.
-<br><br>
-                    • Une évaluation juste de la performance<br>
-                    • Une structure de formation pour vous accompagner tout au long de votre parcours<br>
-                    • Des avantages sociaux</p>
-            </div>
+          <h2>ENTRETIEN FINAL</h2>
+          <p>
+            Au cours de cette entrevue, nous parlerons
+            davantage de votre personne afin de vous proposer
+            un parcours personnalisé en cas d'adhésion à
+            
+            l'organisation.
+            
+            Ensuite, nous discuterons des conditions et verrons
+            si nous pouvons conclure un accord. Vous repartez
+            avec une vision et des valeurs que nous partageons,
+            mais également des projets que nous proposons.
+          </p>
         </div>
-        <button (click)="scrollToElementRejoindre(condidature)">Rejoignez-nous</button>
-    </section>
-    <section class="third-section">
-        <h1>Comment rejoindre nos équipes ? </h1>
-        <p>Nous ne disposons pas de directeur des ressources humaines. De ce fait, toutes les candidatures sont évaluées par vos futurs collègues.</p>
+      </div>
+      <hr />
+      <div>
+        <img src="assets/5.svg" alt="number 5" />
         <div>
-            <div>
-                <img src="assets/1.svg" alt="number 1">
-                <div>
-                    <h2>NOUS EXAMINONS VOTRE CV</h2>
-                    <p>Notre équipe technique examine vos compétences et voit si vous pouvez passer à l'étape suivante. </p>
-                </div>
-            </div>
-            <hr>
-            <div class="even">
-                <img src="assets/2.svg" alt="number 2">
-                <div>
-                    <h2>APPRENDRE À SE CONNAÎTRE</h2>
-                    <p>Avec un appel vidéo ou au bureau. Le but est de comprendre pourquoi vous avez postulé, pourquoi nous vous avons invité, de vous présenter Presco Consulting et comment nous travaillons. C'est avant tout comprendre votre parcours et connaître vos projets et voir si nous serions à la hauteur. </p>
-                </div>
-            </div>
-            <hr>
-            <div>
-                <img src="assets/3.svg" alt="number 3">
-                <div>
-                    <h2>ÉVALUATION TECHNIQUE</h2>
-                    <p>Vous rencontrez un de nos experts dans le domaine qui vous intéresse, c'est aussi l'occasion de vous aider à faire votre auto-évaluation et connaître votre niveau. Au cours de cette évaluation, nous comprenons à quel point vous êtes avancé techniquement. Vous partez après avoir potentiellement rencontré votre futur responsable technique et nous espérons que vous aurez appris quelques trucs.  </p>
-                </div>
-            </div>
-            <hr>
-            <div class="even">
-                <img src="assets/4.svg"style="margin-right: 46px;" alt="number 4">
-                <div>
-                    <h2>ENTRETIEN FINAL</h2>
-                    <p>Au cours de cet entretien, nous parlerons un peu plus de votre personne afin de vous proposer un parcours personnalisé si vous rejoignez l'organisation.<br>
-                        Ensuite, nous discuterons des conditions et verrons si nous pouvons conclure à un accord. Vous repartez avec une vision et des valeurs que nous partageons, mais aussi des projets que nous proposons. </p>
-                </div>
-            </div>
-            <hr>
-            <div>
-                <img src="assets/5.svg" alt="number 5">
-                <div>
-                    <h2>ET APRÈS ?</h2>
-                    <p>Deux possibilités s'offrent à vous : <br>
-                      <span class="span-1">➊</span> Tous les feux sont au vert des deux côtés, en accord avec le service technique et les supérieurs, nous vous faisons une proposition. <br>
-                       <span class="span-2">➋</span> Ce n'est pas le bon moment, nous restons en contact et nous réessayerons plus tard ! </p>
-                </div>
-            </div>
+          <h2>ET APRÈS ?</h2>
+          <p>
+            Deux possibilités s'offrent à vous : <br />
+            <span class="span-1">➊</span>Tous les feux sont au vert des deux côtés, en
+            accord avec le service technique et les supérieurs,
+            
+            nous vous soumettons une proposition. <br />
+            <span class="span-2">➋</span>Ce n'est pas le bon moment, nous restons en
+            contact et nous essaierons de nouveau plus tard !
+          </p>
         </div>
-    </section>
-    <!-- <section class="fourth-section">
+      </div>
+    </div>
+  </section>
+  <!-- <section class="fourth-section">
         <h1>Des profils que nous recherchons</h1>
         <div>
             <div>
@@ -131,30 +213,40 @@
         </div>
         <button>Toutes nos opportunités d'emploi</button>
     </section> -->
-    <section class="fifth-section" #condidature>
-        <h1>CANDIDATURE SPONTANÉE</h1>
-        <p>Presco Consulting recherche de nouveaux et différents talents sur différents métiers.<br>
-            Si nous ne trouvez pas d’offres correspondant à votre profil, n’hésitez pas à candidater de manière spontanée.</p>
-            <div>
-                <div class="contact-form">
-                        <div>
-                            <input type="text" placeholder="Nom*">
-                            <input type="text" placeholder="E-mail*">
-                            <input type="text" placeholder="Entreprise">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Prénom *">
-                            <input type="text" placeholder="Téléphone  *">
-                            <input type="text" placeholder="Téléphone  *">
-                        </div>
-                </div>
-                    <textarea name="" id="" cols="30" placeholder="Décrivez-nous votre projet ou votre demande..." rows="10"></textarea>
-                    <p class="votre-cv">Votre CV</p>
-                    <label class="custom-file-upload">
-                        <input type="file"/>
-                        Choisir un fichier
-                    </label>
-                 <!-- <p class="terms">accepte la conservation de mes données dans le cadre de <span style="color: var(--primary-purple)">la politique de confidentialité des données Presco Consulting :</span></p>
+  <section class="fifth-section" #condidature>
+    <h1>CANDIDATURE SPONTANÉE</h1>
+    <p>
+      Presco Consulting recherche de nouveaux et différents talents sur
+      différents métiers.<br />
+      Si nous ne trouvez pas d’offres correspondant à votre profil, n’hésitez
+      pas à candidater de manière spontanée.
+    </p>
+    <div>
+      <div class="contact-form">
+        <div>
+          <input type="text" placeholder="Nom*" />
+          <input type="text" placeholder="E-mail*" />
+          <input type="text" placeholder="Entreprise" />
+        </div>
+        <div>
+          <input type="text" placeholder="Prénom *" />
+          <input type="text" placeholder="Téléphone  *" />
+          <input type="text" placeholder="Téléphone  *" />
+        </div>
+      </div>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        placeholder="Décrivez-nous votre projet ou votre demande..."
+        rows="10"
+      ></textarea>
+      <p class="votre-cv">Votre CV</p>
+      <label class="custom-file-upload">
+        <input type="file" />
+        Choisir un fichier
+      </label>
+      <!-- <p class="terms">accepte la conservation de mes données dans le cadre de <span style="color: var(--primary-purple)">la politique de confidentialité des données Presco Consulting :</span></p>
                 <div class="radio-divs">
                     <input type="radio" id="oui" name="yes-no" value="oui"
                            checked>
@@ -165,10 +257,15 @@
                     <input type="radio" id="non" name="yes-no" value="non">
                     <label for="non">Non</label>
                   </div>  -->
-                  <p  class="terms">En cliquant sur "Envoyer" Vous acceptiez la conservation de vos données dans le cadre de  Notre <span style="color: var(--primary-purple)">Politique de protection des données.</span></p>
-                  
-                <button id="send-btn">ENVOYER</button>
-            </div>
-    </section>
-</div>
+      <p class="terms">
+        En cliquant sur "Envoyer" Vous acceptiez la conservation de vos données
+        dans le cadre de Notre
+        <span style="color: var(--primary-purple)"
+          >Politique de protection des données.</span
+        >
+      </p>
 
+      <button id="send-btn">ENVOYER</button>
+    </div>
+  </section>
+</div>

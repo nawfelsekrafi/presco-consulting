@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LegalesComponent } from './pages/legales/legales.component';
 
 const routes: Routes = [
   {
@@ -43,6 +44,10 @@ const routes: Routes = [
         (m) => m.QuiSommesNousModule
       ),
   },
+  {
+    path: 'mentions-légales',
+    component: LegalesComponent
+  }
 ];
 
 @NgModule({

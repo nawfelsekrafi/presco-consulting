@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscriptionComponent implements OnInit {
 
-  page: string = 'inter';
   constructor() { }
 
   ngOnInit(): void {

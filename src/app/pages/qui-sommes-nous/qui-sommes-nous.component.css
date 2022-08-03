@@ -295,6 +295,9 @@ p {
   .toHide {
     display: none;
   }
+  #rectangle-1{
+    display: none;
+  }
 
   .last-section,
   .notre-histoire {

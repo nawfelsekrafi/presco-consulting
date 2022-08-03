@@ -1,6 +1,6 @@
 .nos-services__container {
   padding-bottom: 60px;
-  /* margin-top: 87px; */
+  padding-top: 87px;
   z-index: 0;
   font-family: "Montserrat", sans-serif;
   background-position: -111px -233px;
@@ -15,8 +15,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 75vh;
-  margin: 0px 140px 100px 140px;
+  padding: 0 140px 200px 140px;
 }
 
 .first-section div {
@@ -37,10 +36,11 @@
   display: flex;
   align-items: flex-start;
   color: white;
+  /* flex-wrap: wrap; */
 }
 .third-section img {
-    margin-right: 40px;
-    margin-top: 20px;
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
 .div-4 h4,
@@ -52,7 +52,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-
 .forth-section-divs h4 {
   color: white;
   font-size: 20px;
@@ -60,7 +59,7 @@
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
-.forth-section-divs{
+.forth-section-divs {
   display: flex;
   justify-content: space-between;
   margin: 0px 140px;
@@ -68,22 +67,21 @@
 
 .forth-section-divs div {
   background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
-    padding: 30px;
-    margin-right:11px;
-    width: 30%;
-    color: white;
-    border-radius: 37px;
+  padding: 30px;
+  margin-right: 11px;
+  width: 30%;
+  color: white;
+  border-radius: 37px;
 }
-.forth-section-divs div:last-child{
-  margin-right:0px;
+.forth-section-divs div:last-child {
+  margin-right: 0px;
 }
-
 
 .forth-section-divs div > p {
   text-align: left;
 }
 
-.forth-section-divs div:nth-child(2){
+.forth-section-divs div:nth-child(2) {
   background: linear-gradient(#1b89ca, #2e3792);
 }
 
@@ -122,7 +120,8 @@ h1,
   font-family: "Montserrat", sans-serif;
 }
 
-h1 > span, h3>span {
+h1 > span,
+h3 > span {
   color: var(--primary-purple);
 }
 
@@ -134,8 +133,8 @@ h1 > span, h3>span {
   text-align: center;
 }
 
-
-.second-section h3 , .forth-section h3 {
+.second-section h3,
+.forth-section h3 {
   text-transform: uppercase;
   font-size: 25px;
   margin: 0;
@@ -144,8 +143,8 @@ h1 > span, h3>span {
   color: var(--primary-blue);
 }
 
-.forth-section h3  {
-  margin-bottom: 30px;;
+.forth-section h3 {
+  margin-bottom: 30px;
 }
 
 .second-section {
@@ -226,7 +225,6 @@ p {
   padding: 30px;
   border: 1px solid var(--primary-blue);
   border-radius: 30px;
-  
 }
 
 .text {
@@ -239,13 +237,17 @@ p {
   .text {
     height: 242px;
   }
+
+  .div-1 > img,
+  .div-2 > img {
+    width: 400px;
+  }
 }
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1220px) {
   .first-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 87px 40px 0px 40px;
-    margin: 0;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0px 10px;
   }
   .first-section div {
     align-items: center;
@@ -254,8 +256,55 @@ p {
     margin: 19px 0px;
     width: 35%;
   }
+  .third-section {
+    padding: 0 10px;
+  }
+  .forth-section-divs {
+    margin: 0px 10px;
+  }
+  .div-1 > img,
+  .div-2 > img {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .div-1 > img,
+  .div-2 > img {
+    width: 300px;
+  }
+  .second-section {
+    margin: 0px 10px;
+  }
+  .div-4,
+  .div-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .div-4 h4,
+  .div-3 h4 {
+    text-align: center;
+  }
+  .div-4 > img,
+  .div-3 > img {
+    margin: unset;
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-width: 980px) {
+  .div-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-2 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .div-1 > img,
+  .div-2 > img {
+    margin: unset;
+  }
+
   #send-btn-blue {
     margin-bottom: 0px;
   }
@@ -273,9 +322,28 @@ p {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .text {
     padding: 0px;
+  }
+  .p-toHide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .forth-section-divs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .forth-section-divs div {
+    margin-right: unset;
+    width: 200px;
+    margin-bottom: 22px;
+    height: 200px;
+  }
+  p{
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 619px) {
@@ -292,7 +360,10 @@ p {
 @media only screen and (max-width: 450px) {
   .first-section > img {
     margin: 19px 0px;
-    width: 107%;
+    /* width: 107%; */
+  }
+  .forth-section h3 {
+    font-size: 1em;
   }
 }
 @media only screen and (max-width: 353px) {

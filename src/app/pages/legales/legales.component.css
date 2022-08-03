@@ -1,0 +1,30 @@
+div {
+    padding-top: 87px;
+    margin: 0 40px;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+h4{
+  font-size: 1.3em;  
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4:nth-of-type(odd){
+    color: var(--primary-blue);
+}
+h4:nth-of-type(even){
+    color: var(--primary-purple);
+}
+
+@media(max-width: 380px) {
+    div {
+        margin: 0 10px
+    }
+    p {
+        margin: 0;
+    }
+}

@@ -3,8 +3,9 @@
     border: 1px solid var(--primary-blue);
     border-radius: 20px;
     padding: 20px;
-    right: 140px;
+    right: 40px;
     top: 190px;
+    /* bottom: 200px; */
     background-color: white;
 }
 .sub-header {
