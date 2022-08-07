@@ -11,25 +11,36 @@
     </section>
     <section class="second-section"  #second>
         <hr>
-        <div>
+        <form [formGroup]="form">
             <h1 >écrivez-nous</h1>
             <div class="contact-form">
                     <div>
-                        <input type="text" placeholder="Nom*">
-                        <input type="text" placeholder="Prénom *">
-                        <input type="text" placeholder="E-mail*">
+                        <input type="text" formControlName="Nom" placeholder="Nom*" name="nom">
+                        <input type="text" formControlName="Entreprise" name="entreprise" placeholder="Entreprise">
+                        <input type="text" formControlName="Email"  name="email" placeholder="E-mail*">
                     </div>
                     <div>
-                        <input type="text" placeholder="Entreprise">
-                        <input type="text" placeholder="Téléphone  *">
-                        <input type="text" placeholder="Object  *">
+                        <input type="text" formControlName="Prénom" name="prenom" placeholder="Prénom *">
+                        <input type="text" formControlName="Téléphone"  name ="telephone" placeholder="Téléphone  *">
+                        <input type="text" formControlName="Sujet" name="sujet" placeholder="Sujet  *">
                     </div>
-            </div>
-                <textarea name="" id="" cols="30" placeholder="Décrivez-nous votre projet ou votre demande..." rows="10"></textarea>
+               
+                </div>
+                <textarea name="Message" id="" cols="30" formControlName="message" placeholder="Décrivez-nous votre projet ou votre demande..." rows="10"></textarea>
             <p>Presco Consulting traite vos données personnelles afin de répondre à votre demande de  contact. Vous disposez de droits sur vos données.
-                Pour plus d’informations, nous vous invitons à consulter notre <span>Politique de protection des données.</span></p>
-            <button id="send-btn">ENVOYER</button>
-        </div> 
+                Pour plus d’informations, nous vous invitons à consulter notre <span routerLink="../mentions-légales" style="cursor: pointer;">Politique de protection des données.</span></p>
+                <!-- <form class="contact-form" (submit)="sendEmail($event)"> -->
+                    <!-- <label>Name</label>
+                    <input type="text" name="user_name"> -->
+                    <!-- <label>Email</label>
+                    <input type="email" name="user_email"> -->
+                    <!-- <label>Message</label> -->
+                    <!-- <textarea name="message" style="display: none"></textarea> -->
+                    <button id="send-btn" (click)="sendEmail()">ENVOYER</button>
+                    <!-- <input type="submit" value="Send"> -->
+                <!-- </form> -->
+                <!-- <input type="submit" value="Send"> -->
+                    </form> 
         <hr>
      </section> 
     <section class="third-section">
@@ -58,4 +69,5 @@
             </div>
         </div>
     </section>
+   
 </div>

@@ -60,7 +60,7 @@ h1 > span {
   flex-direction: column;
 }
 
-.second-section > div {
+.second-section > form {
   margin-top: 36px;
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@ h1 > span {
   align-items: center;
 }
 
-.second-section > div > p {
+.second-section > form > p {
   text-align: center;
   line-height: 30px;
   font-size: 17px;
@@ -76,7 +76,7 @@ h1 > span {
   font-weight: 400;
 }
 
-.second-section > div > p > span {
+.second-section > form > p > span {
   color: var(--primary-purple);
 }
 
