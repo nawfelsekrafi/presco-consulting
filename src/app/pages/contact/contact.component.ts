@@ -14,7 +14,9 @@ export class ContactComponent implements OnInit {
   // this is used for Google Recaptcha v2
   siteKey: string = '';
 
-  constructor(private http: HttpClient) {
+  constructor(
+    private http: HttpClient
+    ) {
     this.form = new FormGroup({
       Sujet: new FormControl(),
       Nom: new FormControl(),

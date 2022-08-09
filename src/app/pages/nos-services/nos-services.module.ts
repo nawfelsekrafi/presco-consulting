@@ -8,7 +8,9 @@ import { IaComponent } from './ia/ia.component';
 import { UxDeveloppementComponent } from './ux-developpement/ux-developpement.component';
 import { FormationComponent } from './formation/formation.component';
 import { UiModule } from 'src/app/shared/ui/ui.module';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatTabsModule } from '@angular/material/tabs';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const routes = [
@@ -32,6 +34,8 @@ const routes = [
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
+    HttpClientModule,
+    MatDialogModule,
     MatTabsModule,
     UiModule
   ]
