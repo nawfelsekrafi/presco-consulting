@@ -5,6 +5,7 @@ import { ContactComponent } from './contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxCaptchaModule } from 'ngx-captcha';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 
 const routes = [
@@ -18,6 +19,7 @@ const routes = [
     RouterModule.forChild(routes),
     CommonModule,
     NgxCaptchaModule,
+    SweetAlert2Module.forRoot(),
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule

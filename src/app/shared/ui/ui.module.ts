@@ -4,6 +4,7 @@ import { CoursComponent } from './cours/cours.component';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { FormsModule } from '@angular/forms';
 import { SendDevisComponent } from './send-devis/send-devis.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 
 
@@ -15,7 +16,8 @@ import { SendDevisComponent } from './send-devis/send-devis.component';
   imports: [
     CommonModule,
     NgxCaptchaModule,
-    FormsModule
+    FormsModule,
+    SweetAlert2Module.forRoot()
   ],
   exports: [
     CoursComponent,

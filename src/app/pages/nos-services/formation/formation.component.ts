@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { SendDevisComponent } from 'src/app/shared/ui/send-devis/send-devis.component';
 
+
 @Component({
   selector: 'app-formation',
   templateUrl: './formation.component.html',
@@ -16,6 +17,8 @@ export class FormationComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  text:any;
 
   demandezDevis() {
     const dialogRef = this.dialog.open(SendDevisComponent, {
@@ -69,11 +72,12 @@ export class FormationComponent implements OnInit {
     });
   }
 
-
+formation: any;
+title: any;
   sendEmailDevis(message: any) {
       var email: any = {};
       email.sujet = "Demande Devis Pour "+ message.formation;
-      let formation = message.formation;
+       this.formation = message.formation;
       delete message.formation;
       delete message.captcha;
       email.message = message;
@@ -81,21 +85,24 @@ export class FormationComponent implements OnInit {
       let apiUrl = 'https://email-server-presco.herokuapp.com/api/send-devis-email';
       this.http.post(apiUrl, email).subscribe((response: any) => {
         if(response && response?.data == "email sent successfully"){
-          alert(`Demande de Devis Pour ${formation} a été envoyé avec succès ✅`)
+          this.text = `Demande de Devis a été envoyé avec succès !`;
+          this.title='Demande Envoyée 📚🚀';
+          let btn = document.getElementById('swal2');
+          btn?.click();
         }
       });
   }
   sendEmailContact(message: any) {
       var email: any = {};
       email.sujet = "Email consernant "+ message.formation;
-      let formation = message.formation;
       delete message.formation;
       email.message = message;
 
       let apiUrl = 'https://email-server-presco.herokuapp.com/api/send-contact-email';
       this.http.post(apiUrl, email).subscribe((response: any) => {
         if(response && response?.data == "email sent successfully"){
-          alert(`Votre Message consernant ${formation} a été envoyé avec succès ✅`)
+          let btn = document.getElementById('swal3');
+          btn?.click();
         }
       });
   }

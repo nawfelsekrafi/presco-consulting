@@ -7,6 +7,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./send-devis.component.css'],
 })
 export class SendDevisComponent implements OnInit {
+  
   contact: boolean = false;
   devis: boolean = false;
   email: any;
@@ -36,7 +37,9 @@ export class SendDevisComponent implements OnInit {
 
   Submit(){
     if(this.captcha){
+      
     if(this.contact){
+      if(this.email && this.phone && this.message ){
       this.ref.close(
         {
           "task":"contact",
@@ -46,8 +49,13 @@ export class SendDevisComponent implements OnInit {
           "formation": this.formation
         }
       )
+    }else {
+      let btn1 = document.getElementById('swal1');
+      btn1?.click();
+    }
     }
     else{
+      if(this.email && this.phone ){
       this.ref.close(
         {
           "task":"devis",
@@ -55,11 +63,18 @@ export class SendDevisComponent implements OnInit {
           "phone": this.phone,
           "formation": this.formation
         }
-      )
+      )}
+      else{
+        let btn1 = document.getElementById('swal1');
+        btn1?.click();
+      }
     }
   }
   else{
-    alert("Cocher le bouton Je ne suis pas un robot S'il vous plait! 🤖⛔");
+    let btn = document.getElementById('swal');
+    btn?.click();
+    // alert("Cocher le bouton Je ne suis pas un robot S'il vous plait! 🤖⛔");
+   
   }
     
   }

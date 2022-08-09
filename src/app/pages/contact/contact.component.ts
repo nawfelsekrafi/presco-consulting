@@ -47,6 +47,7 @@ export class ContactComponent implements OnInit {
 
   sendEmail() {
     if (this.captcha) {
+      if(this.form.value.Email &&this.form.value.Nom && this.form.value.Téléphone && this.form.value.Prénom && this.form.value.Sujet ){
       var email: any = {};
       email.message = this.form.value;
       email.sujet = this.form.value.Sujet;
@@ -54,12 +55,21 @@ export class ContactComponent implements OnInit {
       let apiUrl = 'https://email-server-presco.herokuapp.com/api/send-contact-email';
       this.http.post(apiUrl, email).subscribe((response: any) => {
         if(response && response?.data == "email sent successfully"){
-          alert("votre message a été envoyé avec succès ✅")
+          // alert("votre message a été envoyé avec succès ✅")
+          let btn = document.getElementById('swal3');
+          btn?.click();
         }
       });
+    }else {
+      let btn1 = document.getElementById('swal1');
+      btn1?.click();
     }
+  }
+
     else{
-     alert("Cocher le bouton Je ne suis pas un robot S'il vous plait! 🤖⛔");
+      let btn = document.getElementById('swal');
+    btn?.click();
+    //  alert("Cocher le bouton Je ne suis pas un robot S'il vous plait! 🤖⛔");
     }
   }
 }

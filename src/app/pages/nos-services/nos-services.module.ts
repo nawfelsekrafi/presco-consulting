@@ -11,6 +11,7 @@ import { UiModule } from 'src/app/shared/ui/ui.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTabsModule } from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 
 const routes = [
@@ -37,7 +38,8 @@ const routes = [
     HttpClientModule,
     MatDialogModule,
     MatTabsModule,
-    UiModule
+    UiModule,
+    SweetAlert2Module.forRoot()
   ]
 })
 export class NosServicesModule { }

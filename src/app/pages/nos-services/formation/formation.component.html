@@ -110,8 +110,14 @@ Découvrez le potentiel du Design Thinking, expérimentez l’état d’esprit, 
 
     <div class="contact">
         <h2>Besoin d'aide pour trouver votre formation ?</h2>
-        <button id="send-btn">Contactez-nous</button>
-
+        <button id="send-btn" routerLink="../../../../contactez-nous">Contactez-nous</button>
     </div>
+    <button id="swal2" style="visibility:hidden"[swal]="['Demande Envoyée 📚🚀','Demande de Devis a été envoyé avec succès !', 'success']">
+      Do it!
+    </button >
+    <button id="swal3" style="visibility:hidden"[swal]="['Message Envoyé 📚🚀', 'Votre Message a été envoyé avec succès !', 'success']">
+      Do it!
+    </button >
+
 
 </div>

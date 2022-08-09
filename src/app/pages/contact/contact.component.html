@@ -40,6 +40,15 @@
                         <ngx-recaptcha2 #captchaElem="ngModel" ngModel name="captcha" [siteKey]="siteKey" (success)="resolved($event)"[hl]="'fr'" [ngModelOptions]="{standalone: true}"> </ngx-recaptcha2>
                       </div>
                     <button  [disabled]="form.invalid" id="send-btn" (click)="sendEmail()">ENVOYER</button>
+                    <button id="swal" style="visibility:hidden"[swal]="['Oops!', 'Cocher le bouton Je ne suis pas un robot s\'il vous plait! ', 'warning']">
+                        Do it!
+                      </button >
+                      <button id="swal1" style="visibility:hidden"[swal]="['Oops!', 'Remplir les champs s\'il vous plait!', 'warning']">
+                        Do it!
+                      </button >
+                      <button id="swal3" style="visibility:hidden"[swal]="['Message Envoyé 📚🚀', 'Votre Message a été envoyé avec succès !', 'success']">
+                        Do it!
+                      </button >
                     <!-- <input type="submit" value="Send"> -->
                 <!-- </form> -->
                 <!-- <input type="submit" value="Send"> -->

@@ -1,10 +1,16 @@
 <div>
-    <button (click)="ref.close()">X</button>
-    <p>{{this.formation}}</p>
-    <input type="text" placeholder="Votre Email *"[(ngModel)]="email" name="Email" id="">
+    <button (click)="ref.close()" class="exit">&times;</button>
+    <p class="cours-title">{{this.formation}}</p>
+    <input type="email" placeholder="Votre Email *"[(ngModel)]="email" name="Email" id="">
     <input type="text" placeholder="Téléphone *" [(ngModel)]="phone" name="Téléphone" id="">
     <textarea name="Message" id="" cols="30" rows="4" [(ngModel)]="message" *ngIf="contact"></textarea>
     <ngx-recaptcha2 #captchaElem="ngModel" ngModel name="captcha" [siteKey]="siteKey" (success)="resolved($event)"[hl]="'fr'" [ngModelOptions]="{standalone: true}"> </ngx-recaptcha2>
     <button id="blue-fill" *ngIf="devis" (click)="Submit()">Demandez un devis</button>
     <button id="send-btn-blue" *ngIf="contact" (click)="Submit()">Contactez-nous</button>
+    <button id="swal" style="visibility:hidden"[swal]="['Oops!', 'Cocher le bouton Je ne suis pas un robot s\'il vous plait! ', 'warning']">
+        Do it!
+      </button >
+    <button id="swal1" style="visibility:hidden"[swal]="['Oops!', 'Remplir les champs s\'il vous plait!', 'warning']">
+        Do it!
+      </button >
 </div>
