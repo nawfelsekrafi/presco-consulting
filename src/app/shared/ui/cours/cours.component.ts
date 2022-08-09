@@ -15,7 +15,16 @@ export class CoursComponent implements OnInit {
   // @Output()
   // OpenCours$ : EventEmitter = new EventEmitter();
 
-  constructor() { }
+  constructor() {
+    this.siteKey = '6LdNOqocAAAAADgo2zcsO4lp5MJV8HaIhngDFZZP';
+   }
+
+  resolved(event: any) {
+    this.captcha = true;
+  }
+  captcha = false;
+  // this is used for Google Recaptcha v2
+  siteKey: string = '';
 
   ngOnInit(): void {
   }

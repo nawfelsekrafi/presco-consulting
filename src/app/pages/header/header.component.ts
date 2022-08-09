@@ -8,24 +8,27 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( private router: Router) { }
-  menuShowed :boolean = false;
+  showList: boolean = false;
 
+  constructor( private router: Router) { }
+  
   ngOnInit(): void {
-    let menuIcon = document.getElementById('list-icon');
-    let menu = <HTMLElement>document.querySelector('.menu');
+    // let menuIcon = document.getElementById('list-icon');
+    // let menu = <HTMLElement>document.querySelector('.menu');
     
       
     
    
-    menuIcon!.onclick = function(){
-      menu!.classList.toggle("show");
-    }
-    menu!.onclick = function(){
-      menu!.classList.toggle("show");
-    }
+    // menuIcon!.onclick = function(){
+    //   menu!.classList.toggle("show");
+    // }
+    // menu!.onclick = function(){
+    //   menu!.classList.toggle("show");
+    // }
     
    
   }
+
+
 
 }

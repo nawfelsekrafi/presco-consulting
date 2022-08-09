@@ -17,6 +17,10 @@ body {
 a {
   text-decoration: none;
 }
+.rc-anchor-normal {
+  height: 74px;
+  width: 325px !important;
+}
 
 p {
   font-family: "Montserrat", sans-serif;

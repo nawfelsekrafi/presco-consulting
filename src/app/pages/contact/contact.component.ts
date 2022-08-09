@@ -6,72 +6,58 @@ import { FormControl, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-
   form: FormGroup;
+  captcha = false;
+  // this is used for Google Recaptcha v2
+  siteKey: string = '';
 
-  constructor(
-    private http: HttpClient
-  ) {
+  constructor(private http: HttpClient) {
     this.form = new FormGroup({
+      Sujet: new FormControl(),
       Nom: new FormControl(),
       Prénom: new FormControl(),
       Email: new FormControl(),
       Entreprise: new FormControl(),
-      Message: new FormControl(),
       Téléphone: new FormControl(),
-      Sujet: new FormControl(),
-      
+      Message: new FormControl(),
     });
-     this.form.valueChanges.subscribe((value) => {
+    this.siteKey = '6LdNOqocAAAAADgo2zcsO4lp5MJV8HaIhngDFZZP';
+    this.form.valueChanges.subscribe((value) => {
       console.log(value);
     });
-   }
-
-  ngOnInit(): void {
   }
 
+  ngOnInit(): void {}
 
   scrollToElement($element: any): void {
-      $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    $element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
   }
-  
-  // nom: string ='';
-  // prenom: string ='';
-  // email: string ='';
+  resolved(event: any) {
+    this.captcha = true;
+  }
 
-  
-  // entreprise: string ='';
-  // telephone: string ='';
-  // sujet: string ='';
+  sendEmail() {
+    if (this.captcha) {
+      var email: any = {};
+      email.message = this.form.value;
+      email.sujet = this.form.value.Sujet;
 
-  // message: string ='';
-  
-
-  
-  
-  public sendEmail() {
-    var email: any = {};
-    email.message = this.form.value;
-    email.sujet = this.form.value.sujet;
-
-
-    let apiUrl="https://email-server-presco.herokuapp.com/api/send-email"
-    this.http.post(apiUrl,email).subscribe((response: any)=>{
-      console.log(response);
-    })
-    // e.preventDefault();
-    // e.target.user_email = 'sekrafinawfel@gmail.com';
-    // e.target.user_name = 'Site Presco Conculting';
-    // e.target.message = `Nom & Prénom: ${this.nom + ' ' + this.prenom},<br/> Email: ${this.email}, Entreprise: ${this.entreprise}, Telephone: ${this.telephone}, Sujet: ${this.sujet}, Message: ${this.message}` ;
-    // console.log(e);
-    // emailjs.sendForm('service_vevj2cp', 'template_c5i7lau', e.target as HTMLFormElement, 'Z_9aGY5Wd9EmVOGOP')
-    //   .then((result: EmailJSResponseStatus) => {
-    //     console.log(result.text);
-    //   }, (error: any) => {
-    //     console.log(error.text);
-    //   });
+      let apiUrl = 'https://email-server-presco.herokuapp.com/api/send-contact-email';
+      this.http.post(apiUrl, email).subscribe((response: any) => {
+        if(response && response?.data == "email sent successfully"){
+          alert("votre message a été envoyé avec succès ✅")
+        }
+      });
+    }
+    else{
+     alert("Cocher le bouton Je ne suis pas un robot S'il vous plait! 🤖⛔");
+    }
   }
 }

@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ContactComponent } from './contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 
 const routes = [
@@ -16,6 +17,7 @@ const routes = [
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
+    NgxCaptchaModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule

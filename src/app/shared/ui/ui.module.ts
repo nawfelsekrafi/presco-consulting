@@ -1,21 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoursComponent } from './cours/cours.component';
-import { SubscriptionComponent } from './subscription-component/subscription.component';
+import { SendDevisComponent } from './send-devis/send-devis.component';
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 
 
 @NgModule({
   declarations: [
     CoursComponent,
-    SubscriptionComponent
+    SendDevisComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgxCaptchaModule
   ],
   exports: [
     CoursComponent,
-    SubscriptionComponent
+    SendDevisComponent,
   ]
 })
 export class UiModule { }
