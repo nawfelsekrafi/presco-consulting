@@ -16,11 +16,12 @@
             <div class="contact-form">
                     <div>
                         <input type="text" formControlName="Nom" placeholder="Nom*" name="nom">
-                        <input type="text" formControlName="Entreprise" name="entreprise" placeholder="Entreprise">
+                        <input type="text" formControlName="Prénom" name="prenom" placeholder="Prénom *">
+                      
                         <input type="text" formControlName="Email"  name="email" placeholder="E-mail*">
                     </div>
                     <div>
-                        <input type="text" formControlName="Prénom" name="prenom" placeholder="Prénom *">
+                        <input type="text" formControlName="Entreprise" name="entreprise" placeholder="Entreprise">
                         <input type="text" formControlName="Téléphone"  name ="telephone" placeholder="Téléphone  *">
                         <input type="text" formControlName="Sujet" name="sujet" placeholder="Sujet  *">
                     </div>
@@ -39,7 +40,10 @@
                     <div id="captcha">
                         <ngx-recaptcha2 #captchaElem="ngModel" ngModel name="captcha" [siteKey]="siteKey" (success)="resolved($event)"[hl]="'fr'" [ngModelOptions]="{standalone: true}"> </ngx-recaptcha2>
                       </div>
-                    <button  [disabled]="form.invalid" id="send-btn" (click)="sendEmail()">ENVOYER</button>
+                    <button  [disabled]="form.invalid" id="send-btn" (click)="sendEmail()" style="display: flex;">
+                        <img *ngIf="showSpinner" style="width:20px" src="assets/spinner.gif" alt="">
+                        <span>ENVOYER</span>
+                        </button>
                     <button id="swal" style="visibility:hidden"[swal]="['Oops!', 'Cocher le bouton Je ne suis pas un robot s\'il vous plait! ', 'warning']">
                         Do it!
                       </button >
@@ -74,7 +78,7 @@
                 <div class="social-media">
                     <a  target="_blank" href="https://www.linkedin.com/company/prescoconsulting-fr/about/"><img src="assets/Linkedin.svg" alt=""></a>
                     <a target="_blank" href=""><img src="assets/Path 353.svg" alt=""></a>
-                    <a target="_blank" href=""><img src="assets/Twitter.svg" alt=""></a>
+                    <a target="_blank" href="https://twitter.com/Presco_consult"><img src="assets/Twitter.svg" alt=""></a>
                     <a target="_blank" href=""><img src="assets/Path 369.svg" alt=""></a>
                 </div>
             </div>

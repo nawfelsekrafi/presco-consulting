@@ -45,9 +45,12 @@ export class ContactComponent implements OnInit {
     this.captcha = true;
   }
 
+  showSpinner: boolean = false;
+
   sendEmail() {
     if (this.captcha) {
       if(this.form.value.Email &&this.form.value.Nom && this.form.value.Téléphone && this.form.value.Prénom && this.form.value.Sujet ){
+      this.showSpinner=true;
       var email: any = {};
       email.message = this.form.value;
       email.sujet = this.form.value.Sujet;
@@ -56,6 +59,7 @@ export class ContactComponent implements OnInit {
       this.http.post(apiUrl, email).subscribe((response: any) => {
         if(response && response?.data == "email sent successfully"){
           // alert("votre message a été envoyé avec succès ✅")
+          this.showSpinner=false;
           let btn = document.getElementById('swal3');
           btn?.click();
         }
