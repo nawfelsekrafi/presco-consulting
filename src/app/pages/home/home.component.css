@@ -156,6 +156,10 @@ input:focus {
   /* color: white; */
 }
 
+.testimonail {
+  margin: 0 -100px;
+}
+
 .project {
   width: 77%;
   border-radius: 40px;
@@ -400,15 +404,15 @@ input:focus {
     text-align: center;
   }
 
-  .testimonails__section {
+  /* .testimonails__section {
     margin: 0 -140px;
-  }
-  .testimonail > div:nth-child(2n) {
+  } */
+  /* .testimonail > div:nth-child(2n) {
     margin-top: -35px;
   }
   .testimonail-text {
     margin: -14px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 980px) {
@@ -474,5 +478,9 @@ input:focus {
   #hero-img {
     margin-top: unset;
     width: 100%;
+  }
+
+  .testimonail{
+    margin: 0 -135px;
   }
 }

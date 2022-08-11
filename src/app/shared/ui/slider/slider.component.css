@@ -23,8 +23,8 @@ body {
 }
 @media screen and (max-width: 992px) {
   .blog-slider {
-    max-width: 680px;
-    height: 400px;
+    max-width: 750px;
+    /* height: fit-content; */
   }
 }
 @media screen and (max-width: 768px) {
