@@ -1,7 +1,7 @@
 <div class="formation-container">
     <div class="cover">
         <img class="cover" src="assets/Cover.png" alt="">
-        <h1>Adopter le Design Thinking</h1>
+        <h1>{{formation.nom}}</h1>
     </div>
     <div class="subscription-container">
         <div class="sub-header">
@@ -40,10 +40,14 @@
         </div>
       </div>
       
-    <div class="sub-title">
-        <h2> DESIGN THINKING : INTÉGREZ LA CULTURE DESIGN ET L’INNOVATION DANS VOS PROJETS ET VOTRE ORGANISATION</h2>
+     <div class="sub-title">
+        <h2>Domain : {{formation.domain}}</h2>
+        <div *ngIf="formation.certifiant" class="certifiant">
+          Préparation à la certification
+      </div>
     </div>
-    <div class="description">
+    
+   <!-- <div class="description">
         Vous souhaitez concevoir des services et produits orientés expérience utilisateurs et innovants ?
 <br><br>
 Découvrez le potentiel du Design Thinking, expérimentez l’état d’esprit, le processus et les méthodes pour mieux collaborer et innover dans tous vos projets
@@ -107,7 +111,7 @@ Découvrez le potentiel du Design Thinking, expérimentez l’état d’esprit, 
             <h4>SÉANCE 7 - BUSINESS MODEL CANVA ET VIABILITÉ ÉCONOMIQUE</h4>
             <h4>SÉANCE 8 : BILAN ET DEBRIEF INDIVIDUEL</h4>
         </div>
-    </div>
+    </div> -->
 
     <div class="contact">
         <h2>Besoin d'aide pour trouver votre formation ?</h2>

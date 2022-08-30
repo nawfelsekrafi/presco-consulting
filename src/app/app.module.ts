@@ -8,6 +8,7 @@ import { FooterComponent } from './pages/footer/footer.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LegalesComponent } from './pages/legales/legales.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { LegalesComponent } from './pages/legales/legales.component';
     MatDialogModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

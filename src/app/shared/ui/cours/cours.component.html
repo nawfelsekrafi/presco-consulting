@@ -1,10 +1,10 @@
 <div class="container" >
     <h4>{{cours?.nom}}</h4>
     <div *ngIf="cours.certifiant" class="certifiant">
-        Certifiant
+        Préparation à la certification
     </div>
     <div>
-        <h5>{{cours.domain +' / ' + cours.sousdomain}}</h5>
+        <h5>{{cours.domain}}</h5>
        
         <div class="cours-footer">
             <div>
@@ -14,8 +14,8 @@
                 <p>{{cours.duree}}</p>
             </div>
             <div>
-                <h6>Prochaine session :</h6>
-                <p>20/06/2022</p>
+                <!-- <h6>Prochaine session :</h6>
+                <p>20/06/2022</p> -->
             </div>
         </div>
     </div>

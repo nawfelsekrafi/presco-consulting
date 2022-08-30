@@ -120,13 +120,6 @@ h1 > span {
   border-radius: 30px;
 }
 
-.blue,
-.purple {
-  display: flex;
-  margin: 130px 140px;
-  height: 300px;
-  align-items: center;
-}
 .img-blue {
   width: 317px;
   height: 317px;
@@ -146,29 +139,6 @@ h1 > span {
   background-color: #fff;
 }
 
-#formations-svg {
-  width: 344px;
-}
-#dev-svg {
-  width: 437px;
-}
-
-#trans-svg {
-  width: 421px;
-}
-#ia-svg {
-  width: 423px;
-}
-#formations-txt {
-  padding: 34px 87px 42px 49px;
-}
-#ia-txt {
-  padding: 34px 49px 42px 87px;
-}
-.blue > div > img,
-.purple > div > img {
-  height: 209px;
-}
 
 .img-purple {
   margin-left: -76px;
@@ -179,22 +149,10 @@ h1 > span {
   border: 1px solid var(--primary-blue);
   z-index: 1;
 }
-.purple > div > h2 {
-  color: var(--primary-purple);
-}
-.blue > div > h2 {
-  color: var(--primary-blue);
-}
 .text {
   padding: 30px;
   border-radius: 30px;
   height: 200px;
-}
-.blue > .text {
-  border: 1px solid var(--primary-blue);
-}
-.purple > .text {
-  border: 1px solid var(--primary-purple);
 }
 
 @media only screen and (max-width: 1314px) {
@@ -216,74 +174,8 @@ h1 > span {
     margin: 19px 0px;
     width: 35%;
   }
-  .img-purple {
-    width: unset;
-    height: unset;
-    border-radius: unset;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-  }
-  .img-blue {
-    width: unset;
-    height: unset;
-    border-radius: unset;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-  }
-  .blue > .text {
-    border: none;
-  }
-  .purple > .text {
-    border: none;
-  }
-  #ia-svg,
-  #trans-svg,
-  #dev-svg,
-  #formations-svg {
-    width: unset;
-  }
-  .blue {
-    display: flex;
-    border-radius: 20px;
-    padding: 30px;
-    margin: 50px 140px;
-    /* height: fit-content; */
-    border: 1px solid var(--primary-blue);
-  }
-  .purple {
-    display: flex;
-    border-radius: 20px;
-    padding: 30px;
-    margin: 50px 140px;
-    /* height: fit-content; */
-    border: 1px solid var(--primary-purple);
-  }
-  #ia-txt {
-    padding: 0px 49px 83px 87px;
-  }
 }
 @media only screen and (max-width: 980px) {
-  .img-blue,
-  .img-purple {
-    display: none;
-  }
-  #formations-txt,
-  #ia-txt {
-    padding: 0px;
-  }
-  .blue {
-    display: block;
-  }
-  .purple {
-    display: block;
-  }
-
   #send-btn-blue {
     margin-bottom: 0px;
   }
@@ -310,11 +202,6 @@ h1 > span {
         flex-direction: column;
         height: 620px;
     }
-
-  .blue,
-  .purple {
-    padding: 30px 30px 71px 30px;
-  }
   .text {
     padding: 0px;
   }
@@ -323,9 +210,7 @@ h1 > span {
     .first-section {
         height: 720px;
     }
-  .last-section,
-  .blue,
-  .purple {
+  .last-section {
     margin: 30px 20px;
     padding: 30px 30px 71px 30px;
   }
@@ -341,15 +226,6 @@ h1 > span {
     width: 107%;
   }
 }
-@media only screen and (max-width: 353px) {
-  .purple {
-    padding: 30px 30px 50px 30px;
-  }
-  .blue {
-    padding: 30px 30px 230px 30px;
-  }
-}
-
 .fourth-section {
   background: linear-gradient(#b1317f, #9d2e78, #752969, #5d2560, #54245d);
   display: flex;
@@ -387,7 +263,7 @@ h1 > span {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.fourth-section  p:hover {
+.fourth-section  p:hover, .active p {
   color: var(--primary-purple);
   background-color: #fff;
   border: 1px solid #fff;
@@ -426,162 +302,12 @@ h1 > span {
     justify-content: space-between;
     margin: 0 auto;
   }
-  .training {
-    /* border: 1px solid var(--primary-blue); */
-    border-radius: 65px;
-    margin-bottom: 21px;
-    padding: 51px 51px;
-    text-align: start;
-    height: calc(100vw / 7);
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    -moz-transition: all 1s;
-  }
-  .training > h2 {
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-    color: var(--primary-blue);
-    color: white;
-  }
+ 
   
   .trainings-projects > button {
     margin-bottom: 20px;
   }
   
-  .training:nth-child(1) {
-    background: linear-gradient(-45deg, #005eea, #00c0fb);
-  }
-  .training:nth-child(1):hover {
-    background: linear-gradient(45deg, #005eea, #00c0fb);
-  }
-  .training:nth-child(2) {
-    background: linear-gradient(45deg, #ff1149,#ffa995);
-  }
-  .training:nth-child(2):hover {
-    background: linear-gradient(-45deg, #ff1149,#ffa995);
-  }
-  .training:nth-child(2):hover {
-    background: linear-gradient(-45deg, #ff1149,#ffa995);
-  }
-  .training:nth-child(3) {
-    background: linear-gradient(-45deg, #dcb218,#f6e061);
-  }
-  .training:nth-child(3):hover {
-    background: linear-gradient(45deg, #dcb218,#f6e061);
-  }
-  .training:nth-child(4) {
-    background: linear-gradient(-45deg, #42b6fe,#02f1fe);
-  }
-  .training:nth-child(4):hover {
-    background: linear-gradient(45deg, #42b6fe,#02f1fe);
-  }
-  .training:nth-child(5) {
-    background: linear-gradient(45deg, #f94f06,#f9ce22);
-  }
-  .training:nth-child(5):hover {
-    background: linear-gradient(-45deg, #f94f06,#f9ce22);
-  }
-  .training:nth-child(6) {
-    background: linear-gradient(-45deg, #06beb6, #06ffff);
-  }
-  .training:nth-child(6):hover {
-    background: linear-gradient(45deg, #06beb6, #06ffff);
-  }
-  
-  .training > div > svg > path {
-    /* fill: var(--primary-blue); */
-    fill: white;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    -moz-transition: all 1s;
-  }
-  .training:nth-child(2n) > div > svg > path {
-    /* fill: var(--primary-purple); */
-    fill: white;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    -moz-transition: all 1s;
-  }
-  
-  .training:nth-child(2n) > h2,
-  .training:nth-child(2n) > div {
-    /* color: var(--primary-purple); */
-    transition: color 1s;
-    -webkit-transition: color 1s;
-    -o-transition: color 1s;
-    -moz-transition: color 1s;
-  }
-  
-  .training > div {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 21px;
-  }
-  
-  .training > div > span {
-    margin-left: 10px;
-    color: white;
-  }
-  .training > a {
-    display: flex;
-    font-size: 10px;
-    margin-left: 15%;
-    justify-content: space-between;
-    font-family: "Montserrat", sans-serif;
-    visibility: hidden;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    -moz-transition: all 1s;
-  }
-  
-  .training > a > img {
-    visibility: hidden;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    -moz-transition: all 1s;
-  }
-  
-  .training:hover > a > img {
-    visibility: visible;
-  }
-  
-  .training:nth-child(2n + 1) > div {
-    color: var(--primary-blue);
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    -moz-transition: all 1s;
-    color: white;
-  }
-  
-  .training:nth-child(2n + 1) {
-    /* background: inherit; */
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    -moz-transition: all 1s;
-  }
-  .training:hover > div > svg > path {
-    fill: #fff;
-  }
-  .training:hover > h2,
-  .training:hover > div {
-    color: #fff;
-  }
-  .training:hover > a {
-    visibility: visible;
-    color: #fff;
-  }
-
   .trainings > button,
 .contact-description > button {
   border-radius: 25px;
@@ -596,12 +322,6 @@ h1 > span {
   cursor: pointer;
   transition: all 0.3s ease;
   animation: go-up 2s cubic-bezier(0.05, 0.36, 0.7, 1.21);
-}
-.trainings > button:hover {
-  color: #fff;
-  background-color: var(--primary-blue);
-  box-shadow: 0px 15px 20px #5a8bcc;
-  transform: translateY(-7px);
 }
 
 @media only screen and (max-width: 728px) {

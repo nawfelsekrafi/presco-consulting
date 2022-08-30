@@ -13,6 +13,14 @@
   padding: 30px 130px;
   width: 70%;
 }
+.certifiant {
+  background-color: #B6277B;
+  color: white;
+  padding: 2px 17px;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 11px;
+}
 .subscription-container {
   position: fixed;
   border: 1px solid var(--primary-blue);

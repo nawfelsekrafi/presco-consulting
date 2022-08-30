@@ -1,7 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute } from '@angular/router';
+import { CoursService } from 'src/app/shared/services/cours.service';
 import { SendDevisComponent } from 'src/app/shared/ui/send-devis/send-devis.component';
+
 
 
 @Component({
@@ -12,11 +15,17 @@ import { SendDevisComponent } from 'src/app/shared/ui/send-devis/send-devis.comp
 export class FormationComponent implements OnInit {
   constructor(
     private dialog: MatDialog,
+    private route: ActivatedRoute,
+    private coursService: CoursService,
     private http: HttpClient
     ) {
+      
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.formation = null;
+    this.getFormationById();
+  }
 
   text:any;
 
@@ -27,7 +36,7 @@ export class FormationComponent implements OnInit {
       maxWidth: '100vw',
       data: {
         task: 'devis',
-        formation: 'les methodes agiles',
+        formation: this.formation.nom,
       },
     });
     dialogRef.afterClosed().subscribe((result) => {
@@ -52,7 +61,7 @@ export class FormationComponent implements OnInit {
       maxWidth: '100vw',
       data: {
         task: 'contact',
-        formation: 'les methodes agiles',
+        formation: this.formation.nom ,
       },
     });
     dialogRef.afterClosed().subscribe((result) => {
@@ -107,6 +116,16 @@ title: any;
       });
   }
 
+  getFormationById(){
+    this.route.params
+      .subscribe(
+        (params: any) => {        
+          this.formation =  this.coursService.getFormations().filter((e:any) => e.id == params['id'] )[0];
+        }
+      );
+    }
+
+    
 
 
 }

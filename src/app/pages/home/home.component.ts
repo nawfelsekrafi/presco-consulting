@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { courses } from 'src/app/shared/fake-db/fake-db';
-import { Cours } from 'src/app/shared/models/cours';
+import { CoursService } from 'src/app/shared/services/cours.service';
 
 @Component({
   selector: 'app-home',
@@ -10,12 +9,18 @@ import { Cours } from 'src/app/shared/models/cours';
 })
 export class HomeComponent implements OnInit {
   courses :any ;
-  constructor(public router: Router) {
+  constructor(public router: Router,
+    private coursService: CoursService
+    ) {
     
    }
 
   ngOnInit(): void {
-    this.courses = courses.slice(0 ,4);
+    this.getFormation();
+  }
+
+  getFormation(){
+   this.courses =  this.coursService.getFormations().slice(0,4);
   }
 
 }

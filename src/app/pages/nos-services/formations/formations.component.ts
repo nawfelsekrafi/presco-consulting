@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Cours } from 'src/app/shared/models/cours';
-import { courses } from '../../../shared/fake-db/fake-db'
+import { CoursService } from 'src/app/shared/services/cours.service';
+
 
 @Component({
   selector: 'app-formations',
@@ -10,14 +10,33 @@ import { courses } from '../../../shared/fake-db/fake-db'
 export class FormationsComponent implements OnInit {
 
   courses : any;
-  constructor() { }
+  constructor(
+    private coursService: CoursService
+  ) { }
+
+  getFormation(){
+    this.courses =  this.coursService.getFormations();
+  }
 
   ngOnInit(): void {
-    this.courses  = courses.splice(0,5);
+    this.getFormation();
+    this.courses  = this.courses.slice(0,5);
+    
   }
 
   scrollToElement($element: any): void {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
+
+  selectedFilter:any;
+  filterFormationBy(domain: any){
+    this.getFormation();
+    this.selectedFilter = domain;
+    this.courses = this.courses.filter((e:any) => e.domain == domain);
+  }
+
+  afficherAllFormation(){
+    this.getFormation();
+  }
 
 }

@@ -21,29 +21,29 @@
     <h1>Nos domaines de formation</h1>
     <div>
       <div>
-        <div>
-          <p>Programmation & Développement</p>
+        <div (click)="filterFormationBy('Développement Mobile')" [ngClass]="(selectedFilter=='Développement Mobile') ? 'active' : ''">
+          <p>Développement Mobile</p>
         </div>
-        <div>
-          <p>Management & Soft skills</p>
+        <div (click)="filterFormationBy('Management de projet')"  [ngClass]="(selectedFilter=='Management de projet') ? 'active' : ''">
+          <p>Management de projet</p>
         </div>
       </div>
       <div>
-        <div>
+        <div (click)="filterFormationBy('Outils informatique')"  [ngClass]="(selectedFilter=='Outils informatique') ? 'active' : ''">
           <p>Bureautique</p>
         </div>
-        <div>
-          <p>Web & Mobile</p>
+        <div (click)="filterFormationBy('Développement')" [ngClass]="(selectedFilter=='Développement') ? 'active' : ''">
+          <p>Développement Web</p>
         </div>
-        <div>
-          <p>Design Thinking</p>
+        <div (click)="filterFormationBy('Creation site no code')" [ngClass]="(selectedFilter=='Creation site no code') ? 'active' : ''">
+          <p>Creation Site No Code (CMS)</p>
         </div>
       </div>
       <div>
-        <div>
+        <div (click)="filterFormationBy('Méthodes agile')" [ngClass]="(selectedFilter=='Méthodes agile') ? 'active' : ''">
           <p>Maitriser l'Agilité</p>
         </div>
-        <div>
+        <div (click)="filterFormationBy('Design')" [ngClass]="(selectedFilter=='Design') ? 'active' : ''">
           <p>Design / UX / UI</p>
         </div>
       </div>
@@ -55,6 +55,6 @@
         flex-wrap: wrap;  height: fit-content; ">
       <app-cours [routerLink]="['formation/',cours.id]" *ngFor="let cours of courses" [cours]="cours"></app-cours>
     </div>
-    <button>Afficher plus de formations</button>
+    <button (click)="afficherAllFormation()">Afficher plus de formations</button>
   </div>
 </div>

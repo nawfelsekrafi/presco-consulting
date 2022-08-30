@@ -28,7 +28,6 @@ export class ContactComponent implements OnInit {
     });
     this.siteKey = '6LdNOqocAAAAADgo2zcsO4lp5MJV8HaIhngDFZZP';
     this.form.valueChanges.subscribe((value) => {
-      console.log(value);
     });
   }
 
