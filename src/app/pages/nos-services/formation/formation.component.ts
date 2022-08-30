@@ -91,7 +91,7 @@ title: any;
       delete message.captcha;
       email.message = message;
 
-      let apiUrl = 'https://email-server-presco.herokuapp.com/api/send-devis-email';
+      let apiUrl = 'https://vercel.com/nawfelsekrafi/presco-email-server/api/send-devis-email';
       this.http.post(apiUrl, email).subscribe((response: any) => {
         if(response && response?.data == "email sent successfully"){
           this.text = `Demande de Devis a été envoyé avec succès !`;
@@ -107,7 +107,7 @@ title: any;
       delete message.formation;
       email.message = message;
 
-      let apiUrl = 'https://email-server-presco.herokuapp.com/api/send-contact-email';
+      let apiUrl = 'https://vercel.com/nawfelsekrafi/presco-email-server/api/send-contact-email';
       this.http.post(apiUrl, email).subscribe((response: any) => {
         if(response && response?.data == "email sent successfully"){
           let btn = document.getElementById('swal3');

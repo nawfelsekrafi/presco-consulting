@@ -54,7 +54,7 @@ export class ContactComponent implements OnInit {
       email.message = this.form.value;
       email.sujet = this.form.value.Sujet;
 
-      let apiUrl = 'https://email-server-presco.herokuapp.com/api/send-contact-email';
+      let apiUrl = 'https://vercel.com/nawfelsekrafi/presco-email-server/api/send-contact-email';
       this.http.post(apiUrl, email).subscribe((response: any) => {
         if(response && response?.data == "email sent successfully"){
           // alert("votre message a été envoyé avec succès ✅")
