@@ -4,7 +4,7 @@
     <input type="email" placeholder="Votre Email *"[(ngModel)]="email" name="Email" id="">
     <input type="text" placeholder="Téléphone *" [(ngModel)]="phone" name="Téléphone" id="">
     <textarea name="Message" id="" cols="30" rows="4" [(ngModel)]="message" *ngIf="contact"></textarea>
-    <ngx-recaptcha2 #captchaElem="ngModel" ngModel name="captcha" [siteKey]="siteKey" (success)="resolved($event)"[hl]="'fr'" [ngModelOptions]="{standalone: true}"> </ngx-recaptcha2>
+    <ngx-recaptcha2 #captchaElem="ngModel" ngModel name="captcha" [siteKey]="siteKey" (success)="resolved($event)"[hl]="'fr'" [ngModelOptions]="{standalone: true}" class="captcha"> </ngx-recaptcha2>
     <button id="blue-fill" *ngIf="devis" (click)="Submit()">Demandez un devis</button>
     <button id="send-btn-blue" *ngIf="contact" (click)="Submit()">Contactez-nous</button>
     <button id="swal" style="visibility:hidden"[swal]="['Oops!', 'Cocher le bouton Je ne suis pas un robot s\'il vous plait! ', 'warning']">

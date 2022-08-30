@@ -1,7 +1,7 @@
 <div class="formation-container">
     <div class="cover">
         <img class="cover" src="assets/Cover.png" alt="">
-        <h1>{{formation.nom}}</h1>
+        <h1>{{cours.nom}}</h1>
     </div>
     <div class="subscription-container">
         <div class="sub-header">
@@ -41,8 +41,8 @@
       </div>
       
      <div class="sub-title">
-        <h2>Domain : {{formation.domain}}</h2>
-        <div *ngIf="formation.certifiant" class="certifiant">
+        <h2>Domain : {{cours.domain}}</h2>
+        <div *ngIf="cours.certifiant" class="certifiant">
           Préparation à la certification
       </div>
     </div>

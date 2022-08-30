@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { CoursService } from 'src/app/shared/services/cours.service';
@@ -12,7 +12,7 @@ import { SendDevisComponent } from 'src/app/shared/ui/send-devis/send-devis.comp
   templateUrl: './formation.component.html',
   styleUrls: ['./formation.component.css'],
 })
-export class FormationComponent implements OnInit {
+export class FormationComponent implements OnInit, OnDestroy {
   constructor(
     private dialog: MatDialog,
     private route: ActivatedRoute,
@@ -22,8 +22,10 @@ export class FormationComponent implements OnInit {
       
   }
 
+  cours: any;
+
   ngOnInit(): void {
-    this.formation = null;
+    this.cours = null;
     this.getFormationById();
   }
 
@@ -36,7 +38,7 @@ export class FormationComponent implements OnInit {
       maxWidth: '100vw',
       data: {
         task: 'devis',
-        formation: this.formation.nom,
+        formation: this.cours.nom,
       },
     });
     dialogRef.afterClosed().subscribe((result) => {
@@ -49,7 +51,8 @@ export class FormationComponent implements OnInit {
           "Téléphone": result.phone,
           "formation": result.formation,
         };
-        console.table(message)
+        this.getFormationById();
+        // console.table(message)
         this.sendEmailDevis(message);
       }
     });
@@ -61,7 +64,7 @@ export class FormationComponent implements OnInit {
       maxWidth: '100vw',
       data: {
         task: 'contact',
-        formation: this.formation.nom ,
+        formation: this.cours.nom ,
       },
     });
     dialogRef.afterClosed().subscribe((result) => {
@@ -76,7 +79,8 @@ export class FormationComponent implements OnInit {
           "Message": result.message
         };
         this.sendEmailContact(message);
-        console.table(message)
+        // console.table(message)
+        this.getFormationById();
       }
     });
   }
@@ -120,9 +124,16 @@ title: any;
     this.route.params
       .subscribe(
         (params: any) => {        
-          this.formation =  this.coursService.getFormations().filter((e:any) => e.id == params['id'] )[0];
+          if( !this.cours){
+            this.cours =  this.coursService.getFormations().filter((e:any) => e.id == params['id'] )[0];
+          }
+          
         }
       );
+    }
+
+    ngOnDestroy(){
+      this.cours = null;
     }
 
     
